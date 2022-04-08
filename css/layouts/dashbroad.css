@@ -1,0 +1,8 @@
+#header {
+  background: red;
+}
+#header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
