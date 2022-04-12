@@ -2813,6 +2813,9 @@ a:hover {
   background: none;
   z-index: 9;
 }
+#header .nav .nav-left .search .input-group-mobile {
+  display: none;
+}
 #header .nav .nav-left .search .input-group-mobile .input-group-prepend {
   position: absolute;
   top: 50%;
@@ -2858,6 +2861,23 @@ a:hover {
     display: block;
   }
 }
+@media (max-width: 430px) {
+  #header .nav .nav-left .logo {
+    margin: 0 1.25rem;
+  }
+  #header .nav .nav-left .logo img {
+    width: 5rem;
+    height: auto;
+  }
+  #header .nav .nav-left .language {
+    padding-left: 1.25rem;
+  }
+  #header .nav .nav-left .language img {
+    margin-right: 0.25rem;
+    width: 1.25rem;
+    height: auto;
+  }
+}
 #header .nav .nav-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2889,6 +2909,18 @@ a:hover {
 @media (max-width: 993px) {
   #header .nav .nav-right .calculator {
     display: none;
+  }
+}
+@media (max-width: 430px) {
+  #header .nav .nav-right .profile {
+    padding-left: 0;
+  }
+  #header .nav .nav-right .profile img {
+    width: 40px;
+    height: auto;
+  }
+  #header .nav .nav-right .profile .info {
+    font-size: 0.875rem;
   }
 }
 #header.scroll {

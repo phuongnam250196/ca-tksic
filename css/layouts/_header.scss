@@ -38,6 +38,7 @@
                     }
                 }
                 .input-group-mobile {
+                  display: none;
                   .input-group-prepend {
                       position: absolute;
                       top: 50%;
@@ -91,6 +92,23 @@
                 }
               }
             }
+            @media (max-width: 430px) {
+              .logo {
+                  margin: 0 rem(20);
+                  img {
+                    width: rem(80);
+                    height: auto;
+                  }
+              }
+              .language {
+                padding-left: rem(20);
+                img {
+                    margin-right: rem(4);
+                    width: rem(20);
+                    height: auto;
+                }
+              }
+            }
         }
 
         .nav-right {
@@ -117,6 +135,18 @@
             @media (max-width: 993px) {
               .calculator {
                 display: none;
+              }
+            }
+            @media (max-width: 430px) {
+              .profile {
+                padding-left: 0;
+                img {
+                  width: 40px;
+                  height: auto;
+                }
+                .info {
+                  font-size: rem(14);
+                }
               }
             }
         }
