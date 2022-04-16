@@ -4384,7 +4384,7 @@ a:hover {
 }
 .table-responsive .table tr td a {
   text-decoration: underline;
-  color: #005aaa;
+  color: #37adda;
 }
 .table-responsive .table tr td .dot {
   display: inline-block;
@@ -4419,8 +4419,19 @@ a:hover {
   }
 }
 
-.w8 {
-  width: 830px !important;
+.w800 {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.w1140 {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.w600 {
+  width: 600px;
+  margin: 0 auto;
 }
 
 .title-head {
@@ -4600,6 +4611,7 @@ a:hover {
 }
 .around .box .box-tab .nav-c ul li.active {
   margin: 0 -10px;
+  z-index: 1;
 }
 .around .box .box-tab .nav-c ul li.active a {
   background: #daf1f9;
@@ -4627,6 +4639,9 @@ a:hover {
 .around.collaborators .box .box-tab .table-responsive .table tr td:first-child span.warning {
   color: #ea7f08;
 }
+.around.collaborators .box .box-tab .table-responsive .table tr td:first-child span.danger {
+  color: #ff6767;
+}
 .around.collaborators .box .box-tab .table-responsive .table tr td:first-child span:last-child {
   margin-bottom: 0;
 }
@@ -4644,6 +4659,306 @@ a:hover {
 .around.collaborators .box .box-tab .table-responsive .table tr td .btn:hover {
   color: #fff;
   background: #005aaa;
+}
+.around.collaborators .box .box-tab .box-title {
+  background: #daf1f9;
+  border-radius: 0.5rem;
+  margin: 2.5rem 0 2.5rem;
+}
+.around.collaborators .box .box-tab .box-title h4 {
+  font-size: 16px;
+  padding: 12px;
+  color: #005aaa;
+  text-align: center;
+  font-weight: 600;
+}
+.around.collaborators .box .box-tab .box-other-product {
+  margin-bottom: 3.75rem;
+}
+.around.collaborators .box .box-tab .box-other-product h4 {
+  font-size: 16px;
+  padding: 12px;
+  color: #005aaa;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.around.collaborators .box .box-tab .box-other-product .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.around.collaborators .box .box-tab .box-other-product .list .item {
+  padding: 12px;
+  border-radius: 13px;
+  background: #daf1f9;
+  color: #37adda;
+  width: 142px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+.around.collaborators .box .box-tab .box-other-product .list .item.active {
+  background-color: #005aaa;
+  color: #fff;
+}
+.around.collaborators .box .box-tab .box-content .bx1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.around.collaborators .box .box-tab .box-content .bx1 .bx1-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group p {
+  font-size: 16px;
+  line-height: 40px;
+  color: #4d4d4d;
+  font-weight: 400;
+}
+.around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group p:first-child {
+  width: 192px;
+}
+.around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group p:last-child {
+  width: calc(100% - 192px);
+  color: #005aaa;
+}
+.around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group p .danger {
+  color: #ff6767;
+}
+.around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group p .success {
+  color: #2ca746;
+}
+.around.collaborators .box .box-tab .box-content .bx2 {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+.around.collaborators .box .box-tab .box-content .bx2 a.btn {
+  border: none;
+  width: 150px;
+  height: 42px;
+  border-radius: 8px;
+  margin: 0 12px;
+  background: #36a7d6;
+}
+.around.collaborators .box .box-tab .box-content .bx2 a.btn:first-child {
+  background: #005aaa;
+}
+.around.collaborators .box .box-tab .box-content .bx2 a:hover {
+  opacity: 0.7;
+}
+.around.collaborators .box .box-tab .box-content .bx-title {
+  font-size: 16px;
+  line-height: 25px;
+  color: #005aaa;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.around.recharge .box .box-tab .box-title, .around.recharge-vnpay .box .box-tab .box-title {
+  font-size: 18px;
+  line-height: 25px;
+  color: #5f5f5f;
+  font-weight: 600;
+  text-align: center;
+  padding: 2.5rem 0 3.75rem;
+}
+.around.recharge .box .box-tab .withdraw-money__bank, .around.recharge-vnpay .box .box-tab .withdraw-money__bank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.around.recharge .box .box-tab .withdraw-money__bank .item, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
+  width: 184px;
+  height: 172px;
+}
+.around.recharge .box .box-tab .withdraw-money__bank .item input[type=radio], .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item input[type=radio] {
+  display: none;
+}
+.around.recharge .box .box-tab .withdraw-money__bank .item label, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item label {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 12px;
+  -webkit-filter: drop-shadow(0px 5px 7.5px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 5px 7.5px rgba(0, 0, 0, 0.15));
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  height: 100%;
+  width: 100%;
+}
+.around.recharge .box .box-tab .withdraw-money__bank .item label p, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item label p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+.around.recharge .box .box-tab .withdraw-money__bank .item img, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item img {
+  cursor: pointer;
+  width: initial;
+}
+.around.recharge .box .box-tab .withdraw-money__bank input[type=radio]:checked + label, .around.recharge-vnpay .box .box-tab .withdraw-money__bank input[type=radio]:checked + label {
+  border-radius: 12px;
+  border: 2px solid #005aaa;
+}
+@media (max-width: 500px) {
+  .around.recharge .box .box-tab .withdraw-money__bank .item, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
+    width: 50%;
+    padding: 8px;
+  }
+}
+.around.recharge .box .box-tab .withdraw-money__form, .around.recharge-vnpay .box .box-tab .withdraw-money__form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px 0;
+}
+.around.recharge .box .box-tab .withdraw-money__form .form-group, .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group {
+  border-radius: 12px;
+  margin: 1.25rem 0 3.75rem;
+}
+.around.recharge .box .box-tab .withdraw-money__form .form-group label, .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group label {
+  font-size: 18px;
+  line-height: 25px;
+  color: #005aaa;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.around.recharge .box .box-tab .withdraw-money__form .form-group .form-control, .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group .form-control {
+  color: #37adda;
+  font-weight: 500;
+  border: none;
+  background: #daf1f9;
+  border-radius: 4px;
+  height: 55px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.around.recharge .box .box-tab .withdraw-money__form .form-group .form-control:focus, .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.around.recharge-vnpay .box .box-tab .box-title {
+  font-weight: 400;
+  padding: 0;
+  padding-top: 2.5rem;
+}
+.around.recharge-vnpay .box .box-tab .withdraw-money__form {
+  padding: 0;
+}
+.around.recharge-vnpay .box .box-tab .form-btn {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.around.withdraw .box .box-tab .box-title {
+  font-size: 18px;
+  line-height: 25px;
+  color: #005aaa;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.around.withdraw .box .box-tab .withdraw-money__form .form-group .form-control {
+  height: 55px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #37adda;
+  text-align: center;
+}
+.around.withdraw .box .box-tab .withdraw-money__form .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.around.withdraw .box .box-tab .withdraw-money__form .form-note {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px dashed #37adda;
+  border-radius: 0.75rem;
+  margin-top: 2rem;
+}
+.around.withdraw .box .box-tab .withdraw-money__form .form-note h4 {
+  font-size: 1.125rem;
+  line-height: 25px;
+  color: #005aaa;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.around.withdraw .box .box-tab .withdraw-money__form .form-note p {
+  color: #878787;
+  font-weight: 400;
+}
+.around.withdraw .box .box-tab .withdraw-money__form .form-btn {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.around.withdraw .box .box-tab .box-note {
+  text-align: center;
+}
+.around.withdraw .box .box-tab .box-note p {
+  font-size: 1.125rem;
+  line-height: 30px;
+  color: #878787;
+  font-weight: 400;
+}
+.around.withdraw .box .box-tab .box-note p strong {
+  color: #005aaa;
 }
 
 .btn {
@@ -4737,7 +5052,7 @@ a:hover {
 }
 .modal-general .modal-dialog .modal-content .table tbody tr td a {
   text-decoration: underline;
-  color: #005aaa;
+  color: #37adda;
 }
 .modal-general .modal-dialog .modal-content .table tbody tr td .dot {
   display: inline-block;

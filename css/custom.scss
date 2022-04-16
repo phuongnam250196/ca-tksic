@@ -34,7 +34,7 @@ $cl-btn: #36a7d6;
 				vertical-align: middle;
 				a {
 					text-decoration: underline;
-					color: $c3;
+					color: $cl-1;
 				}
 				.dot {
 					display: inline-block;
@@ -75,9 +75,15 @@ $cl-btn: #36a7d6;
 	}
 }
 
-.w8 {
-	width: 830px !important;
+@mixin width-class($size) {
+	.w#{$size} {
+	  width: $size * 1px;
+	  margin: 0 auto;
+	}
 }
+@include width-class(800);
+@include width-class(1140);
+@include width-class(600);
 .title-head {
 	display: flex;
 	justify-content: center;
@@ -221,6 +227,7 @@ $cl-btn: #36a7d6;
 						}
 						&.active {
 							margin: 0 -10px;	
+							z-index: 1;
 							a {
 								background: $cl-4;
 								color: $cl-blue;
@@ -240,6 +247,7 @@ $cl-btn: #36a7d6;
 			.btn {
 				margin: rem(60) 0 rem(100);
 			}
+			
 		}
 	}
 
@@ -262,6 +270,9 @@ $cl-btn: #36a7d6;
 										&.warning {
 											color: $cl-warning;
 										}
+										&.danger {
+											color: $cl-danger;
+										}
 										&:last-child {
 											margin-bottom: 0;
 										}
@@ -283,6 +294,288 @@ $cl-btn: #36a7d6;
 									}
 								}
 							}
+						}
+					}
+				}
+
+				.box-title {
+					background: $cl-4;
+					border-radius: rem(8);
+					margin: rem(40) 0 rem(40);
+					h4 {
+						font-size: 16px;
+						padding: 12px;
+						color: $cl-blue;
+						text-align: center;
+						font-weight: 600;
+					}
+				}
+
+				.box-other-product {
+					margin-bottom: rem(60);
+					h4 {
+						font-size: 16px;
+						padding: 12px;
+						color: $cl-blue;
+						text-align: center;
+						font-weight: 600;
+						margin-bottom: rem(12);
+					}
+					.list {
+						display: flex;
+						justify-content: space-between;
+						.item {
+							padding: 12px;
+							border-radius: 13px;
+							background: $cl-4;
+							color: $cl-1;
+							width: 142px;
+							height: 55px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							font-weight: bold;
+							text-decoration: none;
+							&.active {
+								background-color: $cl-blue;
+								color: #fff;
+							}
+						}
+					}
+				}
+				.box-content {
+					.bx1 {
+						display: flex;
+						justify-content: space-between;
+						.bx1-child {
+							display: flex;
+							flex-direction: column;
+							.bx1-group {
+								display: flex;
+								p {
+									font-size: 16px;
+									line-height: 40px;
+									color: $cl-text;
+									font-weight: 400;
+									&:first-child {
+										width: 192px;
+									}
+									&:last-child {
+										width: calc(100% - 192px);
+										color: $cl-blue;
+									}
+									.danger {
+										color: $cl-danger;
+									}
+									.success {
+										color: $cl-success;
+									}
+								}
+							}
+						}
+					}
+					.bx2 {
+						text-align: center;
+						padding: 40px 0 20px;
+						a {
+							&.btn {
+								border: none;
+								width: 150px;
+								height: 42px;
+								border-radius: 8px;
+								margin: 0 12px;
+								background: $cl-btn;
+								&:first-child  {
+									background: $cl-blue;
+								}
+							}
+							&:hover {
+								opacity: 0.7;
+							}
+						}
+					}
+					.bx-title {
+						font-size: 16px;
+						line-height: 25px;
+						color: $cl-blue;
+						font-weight: 600;
+						text-align: center;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	&.recharge {
+		.box {
+			.box-tab {
+				.box-title {
+					font-size: 18px;
+					line-height: 25px;
+					color: #5f5f5f;
+					font-weight: 600;
+					text-align: center;
+					padding: rem(40) 0 rem(60);
+				}
+				.withdraw-money__bank {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					margin-bottom: 24px;
+					.item  {
+						width: 184px;
+						height: 172px;
+						
+						input[type="radio"] {
+							display: none;
+						}
+						label {
+							text-align: center;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-direction: column;
+							border-radius: 12px;
+							filter: drop-shadow(0px 5px 7.5px rgba(0,0,0,0.15));
+							background-color: #ffffff;
+							border: 1px solid $cl-2;
+							height: 100%;
+							width: 100%;
+							p {
+								margin-bottom: rem(8);
+								font-size: rem(14);
+							}
+						}
+						img {
+							cursor: pointer;
+							width: initial;
+						}
+					}
+					input[type="radio"]:checked + label {
+						border-radius: 12px;
+						border: 2px solid $cl-blue;
+					}
+					@media (max-width: 500px) {
+						.item  {
+							width: 50%;
+							padding: 8px;
+						}
+					}
+				}
+				.withdraw-money__form {
+					width: 500px;
+					margin: 0 auto;
+					text-align: center;
+					padding: 32px 0;
+					.form-group {
+						border-radius: 12px;
+						margin: rem(20) 0 rem(60);
+						label {
+							font-size: 18px;
+							line-height: 25px;
+							color: $cl-blue;
+							font-weight: 600;
+							margin-bottom: rem(20);
+						}
+						.form-control {
+							color: $cl-1;
+							font-weight: 500;
+							border: none;
+							background: $cl-4;
+							border-radius: 4px;
+							height: 55px;
+							font-size: 18px;
+							text-align: center;
+							margin-bottom: rem(32);
+							&:focus {
+								box-shadow: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.recharge-vnpay {
+		@extend .recharge;
+		.box {
+			.box-tab {
+				.box-title {
+					font-weight: 400;
+					padding: 0;
+					padding-top: rem(40);
+				}
+				.withdraw-money__form {
+					padding: 0;
+				}
+				.form-btn {
+					text-align: center;
+					padding-top: rem(40);
+				}
+			}
+		}
+	}
+
+	&.withdraw {
+		.box {
+			.box-tab {
+				.box-title {
+					font-size: 18px;
+					line-height: 25px;
+					color: $cl-blue;
+					font-weight: 600;
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				.withdraw-money__form {
+					.form-group {
+						.form-control {
+							height: 55px;
+							border-radius: 12px;
+							background-color: #ffffff;
+							border: 1px solid $cl-1;
+							text-align: center;
+							&:focus {
+								box-shadow: none;
+							}
+						}
+					}
+					.form-note {
+						height: 140px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-direction: column;
+						border: 1px dashed $cl-1;
+						border-radius: rem(12);
+						margin-top: rem(32);
+						h4 {
+							font-size: rem(18);
+							line-height: 25px;
+							color: $cl-blue;
+							font-weight: 600;
+							margin-bottom: rem(8);
+						}
+						p {
+							color: #878787;
+							font-weight: 400;
+						}
+					}
+					.form-btn {
+						text-align: center;
+						padding: rem(40) 0;
+					}
+				}
+				.box-note {
+					text-align: center;
+					p {
+						font-size: rem(18);
+						line-height: 30px;
+						color: #878787;
+						font-weight: 400;
+						strong {
+							color: $cl-blue;
 						}
 					}
 				}
@@ -378,7 +671,7 @@ $cl-btn: #36a7d6;
 							padding: 20px 12px;
 							a {
 								text-decoration: underline;
-								color: $c3;
+								color: $cl-1;
 							}
 							.dot {
 								display: inline-block;
