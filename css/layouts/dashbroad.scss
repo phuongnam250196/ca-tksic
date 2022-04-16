@@ -13,7 +13,10 @@ $cl-text: #4d4d4d;
     justify-content: space-between;
     padding-top: rem(40);
     .main {
-      width: 70%;
+      width: 100%;
+      &.main-l {
+        width: 70%;
+      }
       .ct-head {
         .list {
           display: flex;
@@ -340,7 +343,7 @@ $cl-text: #4d4d4d;
       }
     }
     @media (max-width: 1600px) {
-      .main {
+      &.main-l {
         width: 69%;
       }
       .sidebar-right {
@@ -349,7 +352,7 @@ $cl-text: #4d4d4d;
     }
     @media (max-width: 1200px) {
       flex-wrap: wrap;
-      .main {
+      &.main-l {
         width: 100%;
       }
       .sidebar-right {
