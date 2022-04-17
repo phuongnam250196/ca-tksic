@@ -21,10 +21,21 @@ function copyToClipboard(element) {
 //     }
 // }
 $(document).ready(function() {
-    $('#avatar').change(function (event) {
-        var tmppath = URL.createObjectURL(event.target.files[0]);
-        console.log('input.files[0]', tmppath)
-        $(".form-avatar").css({
+    $('#fileUp').change(function (event) {
+        let tmppath = URL.createObjectURL(event.target.files[0]);
+        // console.log('input.files[0]', tmppath);
+
+        $("#imgUp").css({
+            "background-image": `url(${tmppath})`,
+            "background-repeat": "no-repeat",
+            "background-size": "cover",
+            "background-position": "center",
+        })
+    });
+
+    $('#fileDown').change(function (event) {
+        let tmppath = URL.createObjectURL(event.target.files[0]);
+        $("#imgDown").css({
             "background-image": `url(${tmppath})`,
             "background-repeat": "no-repeat",
             "background-size": "cover",
@@ -169,4 +180,55 @@ $(document).ready(function() {
         checkDropdown(item.classList[1]);
     });
     
+    $(".question .title").on("click", function() {
+        $(this).closest('.list').find('.desc').slideUp();
+        $(this).closest('.list').find('.item').removeClass('active');
+        $(this).parents('.item').addClass('active');
+        $(this).parent().find('.desc').slideToggle();
+    })
+
+    const settings = {
+        fill: '#35add9',
+        background: '#ededed'
+    }
+    const sliders = document.querySelectorAll('.range-slider');
+    Array.prototype.forEach.call(sliders, (slider) => {
+        slider.querySelector('input').addEventListener('input', (event) => {
+            applyFill(event.target);
+        });
+
+        applyFill(slider.querySelector('input'));
+    });
+
+    function applyFill(slider) {
+        const percentage = 100 * (slider.value - slider.min) / (slider.max - slider.min);
+        let transform = 50;
+        if (percentage > 95) {
+            transform = 100;
+        }
+        if (percentage < 5) {
+            transform = 0;
+        }
+
+        $(slider).prev().css({"left": percentage + '%', 'transform': 'translateX(-' + transform + '%)'})
+            .find('span').text(numberFormat(slider.value, ',', 0, '.'));
+        slider.style.background = `linear-gradient(90deg, ${settings.fill} ${percentage}%, ${settings.background} ${percentage + 0.1}%)`;
+        $(slider).val(slider.value).trigger('change');
+    }
+
+    function numberFormat(number, decimals, dec_point, thousands_sep) {
+        number = parseFloat(number).toFixed(decimals);
+
+        let nstr = number.toString();
+        nstr += '';
+        x = nstr.split('.');
+        x1 = x[0];
+        x2 = x.length > 1 ? dec_point + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+
+        while (rgx.test(x1))
+            x1 = x1.replace(rgx, '$1' + thousands_sep + '$2');
+
+        return x1 + x2;
+    }
 });
