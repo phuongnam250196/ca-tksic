@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Công tác viên | Danh cho cộng tác viên</title>
+    <title>Công tác viên | Dành cho cộng tác viên</title>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
     <meta content="" name="description">
@@ -91,8 +91,8 @@
                             <div class="box-link">
                                 <label>Link giới thiệu</label>
                                 <div class="link">
-                                    <p>https://my.tksic.vn/register?refid=7043</p>
-                                    <a href="#">Copy</a>
+                                    <p id="linkRegister">https://my.tksic.vn/register?refid=7043</p>
+                                    <a href="javascript:void(0)" onClick="copyToClipboard('#linkRegister')">Copy</a>
                                 </div>
                             </div>
                             <div class="box-qr">
@@ -136,10 +136,16 @@
                                                     <td><span class="dot success"></span> Đang mở</td>
                                                 </tr>
                                                 <tr>
+                                                    <td><a href="javascript:void(0)" data-toggle="modal"  data-target="#open-commission">Nguyễn Thị A</a></td>
+                                                    <td>280,000,000 đ</td>
+                                                    <td>280,000,000 đ</td>
+                                                    <td><span class="dot success"></span> Đang mở</td>
+                                                </tr>
+                                                <tr>
                                                     <td>Nguyen Tran</td>
                                                     <td>280,000,000 đ</td>
                                                     <td>280,000,000 đ</td>
-                                                    <td><span class="dot danger"></span> Đa tat toan</td>
+                                                    <td><span class="dot danger"></span> Đã tất toán</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -287,7 +293,7 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>1</td>
+                                <td>4</td>
                                 <td>Nguyễn Thị A</td>
                                 <td>HD001</td>
                                 <td>1.000.000.000đ</td>
@@ -299,7 +305,7 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>1</td>
+                                <td>5</td>
                                 <td>Nguyễn Thị A</td>
                                 <td>HD001</td>
                                 <td>1.000.000.000đ</td>
@@ -311,7 +317,7 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>1</td>
+                                <td>6</td>
                                 <td>Nguyễn Thị A</td>
                                 <td>HD001</td>
                                 <td>1.000.000.000đ</td>
@@ -325,7 +331,7 @@
                         <tfoot>
                             <tr>
                                 <td></td>
-                                <td>6</td>
+                                <td>7</td>
                                 <td></td>
                                 <td></td>
                                 <td>10.000.000đ</td>

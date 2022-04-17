@@ -11,7 +11,9 @@
             display: flex;
             align-items: center;
 
-            .toggle-n {}
+            .toggle-n {
+              cursor: pointer;
+            }
 
             .logo {
                 margin: 0 rem(32);
@@ -160,6 +162,7 @@
       background: #fff;
       padding: rem(12) 0;
       transition: padding 1s;
+      z-index: 99;
     }
 }
 
