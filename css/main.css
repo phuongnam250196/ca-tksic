@@ -4531,11 +4531,11 @@ a:hover {
   .table-responsive {
     overflow-x: auto;
   }
+}
+@media (max-width: 767px) {
   .table-responsive .table {
     width: 800px;
   }
-}
-@media (max-width: 767px) {
   .table-responsive .table tr th {
     font-size: 0.875rem;
     padding: 0.75rem;
@@ -4855,6 +4855,9 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
+  .around .box .box-tab .nav-c {
+    margin-bottom: 1.25rem;
+  }
   .around .box .box-tab .nav-c ul li a {
     font-size: 0.75rem;
   }
@@ -5354,7 +5357,7 @@ a:hover {
   }
 }
 .around.withdraw .box .box-tab .box-title {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px;
   color: #005aaa;
   font-weight: 600;
@@ -5418,14 +5421,51 @@ a:hover {
 .around.withdraw .box .box-tab .box-note p strong {
   color: #005aaa;
 }
-.around.support .box-title {
-  font-size: 28px;
-  line-height: 25px;
-  color: #005aaa;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+@media (max-width: 767px) {
+  .around.withdraw .box .box-tab .box-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .around.withdraw .box .box-tab .withdraw-money__form .form-group .form-control {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+  }
+  .around.withdraw .box .box-tab .withdraw-money__form .form-note {
+    height: 6.25rem;
+    border-radius: 0.5rem;
+    margin-top: 1.25rem;
+  }
+  .around.withdraw .box .box-tab .withdraw-money__form .form-note h4 {
+    font-size: 1rem;
+  }
+  .around.withdraw .box .box-tab .withdraw-money__form .form-note p {
+    font-size: 0.875rem;
+  }
+  .around.withdraw .box .box-tab .withdraw-money__form .form-btn {
+    text-align: center;
+    padding: 1.25rem 0;
+  }
+  .around.withdraw .box .box-tab .withdraw-money__form .form-btn .btn {
+    font-size: 0.875rem;
+    width: 8.75rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+  }
+  .around.withdraw .box .box-tab .box-note {
+    text-align: center;
+  }
+  .around.withdraw .box .box-tab .box-note p {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .around.withdraw .box .box-tab .box-note {
+    text-align: center;
+  }
+  .around.withdraw .box .box-tab .box-note p br {
+    display: none;
+  }
 }
 .around.support .box-support {
   display: -webkit-box;
@@ -5478,6 +5518,23 @@ a:hover {
   color: #005aaa;
   font-weight: 400;
 }
+@media (max-width: 767px) {
+  .around.support .box-support {
+    height: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem 0;
+  }
+  .around.support .box-support .item {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .around.support .box-support .item:last-child {
+    margin-bottom: 0;
+  }
+}
 .around.support .support__form {
   padding: 2.5rem 0;
 }
@@ -5502,17 +5559,54 @@ a:hover {
 .around.support .support__form .form-btn {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .around.support .support__form {
+    padding: 2rem 0;
+  }
+  .around.support .support__form .title {
+    margin-bottom: 1.25rem;
+  }
+  .around.support .support__form .title br {
+    display: none;
+  }
+  .around.support .support__form .form-group {
+    margin-bottom: 2.5rem;
+  }
+  .around.support .support__form .form-group .form-control {
+    height: 160px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid #37adda;
+    color: #878787;
+    padding: 20px;
+  }
+  .around.support .support__form .form-group .form-control:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .around.support .support__form .form-btn {
+    text-align: center;
+  }
+  .around.support .support__form .form-btn .btn {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+  }
+}
 .around.support .box-note .form-btn {
   text-align: center;
   margin-top: 2.5rem;
 }
-.around.question .box-title {
-  font-size: 18px;
-  line-height: 25px;
-  color: #005aaa;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 2rem;
+@media (max-width: 767px) {
+  .around.support .box-note p br {
+    display: none;
+  }
+  .around.support .box-note .form-btn {
+    margin-top: 1.25rem;
+  }
+  .around.support .box-note .form-btn .btn {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+  }
 }
 .around.question .list .item {
   padding: 1.875rem 6.25rem;
@@ -5521,7 +5615,7 @@ a:hover {
   border-bottom: 1px solid #e2e2e2;
 }
 .around.question .list .item .box-sp .title {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   color: #005aaa;
   font-weight: 400;
@@ -5529,7 +5623,7 @@ a:hover {
 }
 .around.question .list .item .box-sp .desc {
   margin-top: 0.75rem;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   color: #4d4d4d;
   font-weight: 400;
@@ -5542,10 +5636,44 @@ a:hover {
   text-align: center;
   margin-top: 3.75rem;
 }
-.around.history .box .title-group {
+@media (max-width: 767px) {
+  .around.question .list .item {
+    padding: 1.25rem 2.5rem;
+  }
+  .around.question .form-btn {
+    margin-top: 2.5rem;
+  }
+  .around.question .form-btn .btn {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+  }
+}
+@media (max-width: 500px) {
+  .around.question .list .item {
+    padding: 1.25rem;
+  }
+  .around.question .list .item .box-sp .title {
+    font-size: 0.875rem;
+  }
+  .around.question .list .item .box-sp .desc {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .around.question .form-btn {
+    margin-top: 1.5rem;
+  }
+  .around.question .form-btn .btn {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    width: 7.5rem;
+    font-size: 0.875rem;
+  }
+}
+.around.history .box .title-group, .around.history .around.identifier .box .title-group, .around.identifier .around.history .box .title-group, .around.history .around.identifier .box .around.support .box-title, .around.identifier .around.history .box .around.support .box-title, .around.history .around.support .around.identifier .box .box-title, .around.support .around.identifier .around.history .box .box-title, .around.history .around.identifier .around.support .box .box-title, .around.identifier .around.support .around.history .box .box-title, .around.history .around.identifier .box .around.question .box-title, .around.identifier .around.history .box .around.question .box-title, .around.history .around.question .around.identifier .box .box-title, .around.question .around.identifier .around.history .box .box-title, .around.history .around.identifier .around.question .box .box-title, .around.identifier .around.question .around.history .box .box-title, .around.history .around.account .around.identifier .box .title-group, .around.account .around.identifier .around.history .box .title-group, .around.history .around.identifier .around.account .box .title-group, .around.identifier .around.account .around.history .box .title-group, .around.history .around.account .around.identifier .box .around.support .box-title, .around.account .around.identifier .around.history .box .around.support .box-title, .around.history .around.identifier .around.account .box .around.support .box-title, .around.identifier .around.account .around.history .box .around.support .box-title, .around.history .around.account .around.support .around.identifier .box .box-title, .around.account .around.support .around.identifier .around.history .box .box-title, .around.history .around.support .around.identifier .around.account .box .box-title, .around.support .around.identifier .around.account .around.history .box .box-title, .around.history .around.account .around.identifier .around.support .box .box-title, .around.account .around.identifier .around.support .around.history .box .box-title, .around.history .around.identifier .around.support .around.account .box .box-title, .around.identifier .around.support .around.account .around.history .box .box-title, .around.history .around.account .around.identifier .box .around.question .box-title, .around.account .around.identifier .around.history .box .around.question .box-title, .around.history .around.identifier .around.account .box .around.question .box-title, .around.identifier .around.account .around.history .box .around.question .box-title, .around.history .around.account .around.question .around.identifier .box .box-title, .around.account .around.question .around.identifier .around.history .box .box-title, .around.history .around.question .around.identifier .around.account .box .box-title, .around.question .around.identifier .around.account .around.history .box .box-title, .around.history .around.account .around.identifier .around.question .box .box-title, .around.account .around.identifier .around.question .around.history .box .box-title, .around.history .around.identifier .around.question .around.account .box .box-title, .around.identifier .around.question .around.account .around.history .box .box-title, .around.history .around.calculator .around.identifier .box .title-group, .around.calculator .around.identifier .around.history .box .title-group, .around.history .around.identifier .around.calculator .box .title-group, .around.identifier .around.calculator .around.history .box .title-group, .around.history .around.calculator .around.identifier .box .around.support .box-title, .around.calculator .around.identifier .around.history .box .around.support .box-title, .around.history .around.identifier .around.calculator .box .around.support .box-title, .around.identifier .around.calculator .around.history .box .around.support .box-title, .around.history .around.calculator .around.support .around.identifier .box .box-title, .around.calculator .around.support .around.identifier .around.history .box .box-title, .around.history .around.support .around.identifier .around.calculator .box .box-title, .around.support .around.identifier .around.calculator .around.history .box .box-title, .around.history .around.calculator .around.identifier .around.support .box .box-title, .around.calculator .around.identifier .around.support .around.history .box .box-title, .around.history .around.identifier .around.support .around.calculator .box .box-title, .around.identifier .around.support .around.calculator .around.history .box .box-title, .around.history .around.calculator .around.identifier .box .around.question .box-title, .around.calculator .around.identifier .around.history .box .around.question .box-title, .around.history .around.identifier .around.calculator .box .around.question .box-title, .around.identifier .around.calculator .around.history .box .around.question .box-title, .around.history .around.calculator .around.question .around.identifier .box .box-title, .around.calculator .around.question .around.identifier .around.history .box .box-title, .around.history .around.question .around.identifier .around.calculator .box .box-title, .around.question .around.identifier .around.calculator .around.history .box .box-title, .around.history .around.calculator .around.identifier .around.question .box .box-title, .around.calculator .around.identifier .around.question .around.history .box .box-title, .around.history .around.identifier .around.question .around.calculator .box .box-title, .around.identifier .around.question .around.calculator .around.history .box .box-title, .around.history .around.account .around.calculator .around.identifier .box .title-group, .around.account .around.calculator .around.identifier .around.history .box .title-group, .around.history .around.identifier .around.account .around.calculator .box .title-group, .around.identifier .around.account .around.calculator .around.history .box .title-group, .around.history .around.account .around.calculator .around.identifier .box .around.support .box-title, .around.account .around.calculator .around.identifier .around.history .box .around.support .box-title, .around.history .around.identifier .around.account .around.calculator .box .around.support .box-title, .around.identifier .around.account .around.calculator .around.history .box .around.support .box-title, .around.history .around.account .around.calculator .around.support .around.identifier .box .box-title, .around.account .around.calculator .around.support .around.identifier .around.history .box .box-title, .around.history .around.support .around.identifier .around.account .around.calculator .box .box-title, .around.support .around.identifier .around.account .around.calculator .around.history .box .box-title, .around.history .around.account .around.calculator .around.identifier .around.support .box .box-title, .around.account .around.calculator .around.identifier .around.support .around.history .box .box-title, .around.history .around.identifier .around.support .around.account .around.calculator .box .box-title, .around.identifier .around.support .around.account .around.calculator .around.history .box .box-title, .around.history .around.account .around.calculator .around.identifier .box .around.question .box-title, .around.account .around.calculator .around.identifier .around.history .box .around.question .box-title, .around.history .around.identifier .around.account .around.calculator .box .around.question .box-title, .around.identifier .around.account .around.calculator .around.history .box .around.question .box-title, .around.history .around.account .around.calculator .around.question .around.identifier .box .box-title, .around.account .around.calculator .around.question .around.identifier .around.history .box .box-title, .around.history .around.question .around.identifier .around.account .around.calculator .box .box-title, .around.question .around.identifier .around.account .around.calculator .around.history .box .box-title, .around.history .around.account .around.calculator .around.identifier .around.question .box .box-title, .around.account .around.calculator .around.identifier .around.question .around.history .box .box-title, .around.history .around.identifier .around.question .around.account .around.calculator .box .box-title, .around.identifier .around.question .around.account .around.calculator .around.history .box .box-title, .around.history .around.calculator .around.account .around.identifier .box .title-group, .around.calculator .around.account .around.identifier .around.history .box .title-group, .around.history .around.identifier .around.calculator .around.account .box .title-group, .around.identifier .around.calculator .around.account .around.history .box .title-group, .around.history .around.calculator .around.account .around.identifier .box .around.support .box-title, .around.calculator .around.account .around.identifier .around.history .box .around.support .box-title, .around.history .around.identifier .around.calculator .around.account .box .around.support .box-title, .around.identifier .around.calculator .around.account .around.history .box .around.support .box-title, .around.history .around.calculator .around.account .around.support .around.identifier .box .box-title, .around.calculator .around.account .around.support .around.identifier .around.history .box .box-title, .around.history .around.support .around.identifier .around.calculator .around.account .box .box-title, .around.support .around.identifier .around.calculator .around.account .around.history .box .box-title, .around.history .around.calculator .around.account .around.identifier .around.support .box .box-title, .around.calculator .around.account .around.identifier .around.support .around.history .box .box-title, .around.history .around.identifier .around.support .around.calculator .around.account .box .box-title, .around.identifier .around.support .around.calculator .around.account .around.history .box .box-title, .around.history .around.calculator .around.account .around.identifier .box .around.question .box-title, .around.calculator .around.account .around.identifier .around.history .box .around.question .box-title, .around.history .around.identifier .around.calculator .around.account .box .around.question .box-title, .around.identifier .around.calculator .around.account .around.history .box .around.question .box-title, .around.history .around.calculator .around.account .around.question .around.identifier .box .box-title, .around.calculator .around.account .around.question .around.identifier .around.history .box .box-title, .around.history .around.question .around.identifier .around.calculator .around.account .box .box-title, .around.question .around.identifier .around.calculator .around.account .around.history .box .box-title, .around.history .around.calculator .around.account .around.identifier .around.question .box .box-title, .around.calculator .around.account .around.identifier .around.question .around.history .box .box-title, .around.history .around.identifier .around.question .around.calculator .around.account .box .box-title, .around.identifier .around.question .around.calculator .around.account .around.history .box .box-title, .around.history .box .around.support .box-title, .around.support .around.history .box .box-title, .around.history .around.support .box .box-title, .around.history .box .around.question .box-title, .around.question .around.history .box .box-title, .around.history .around.question .box .box-title {
   margin-bottom: 2.5rem;
 }
-.around.history .box .title-group .title {
+.around.history .box .title-group .title, .around.history .around.identifier .box .title-group .title, .around.identifier .around.history .box .title-group .title, .around.history .around.identifier .box .around.support .box-title .title, .around.identifier .around.history .box .around.support .box-title .title, .around.history .around.support .around.identifier .box .box-title .title, .around.support .around.identifier .around.history .box .box-title .title, .around.history .around.identifier .around.support .box .box-title .title, .around.identifier .around.support .around.history .box .box-title .title, .around.history .around.identifier .box .around.question .box-title .title, .around.identifier .around.history .box .around.question .box-title .title, .around.history .around.question .around.identifier .box .box-title .title, .around.question .around.identifier .around.history .box .box-title .title, .around.history .around.identifier .around.question .box .box-title .title, .around.identifier .around.question .around.history .box .box-title .title, .around.history .around.account .around.identifier .box .title-group .title, .around.account .around.identifier .around.history .box .title-group .title, .around.history .around.identifier .around.account .box .title-group .title, .around.identifier .around.account .around.history .box .title-group .title, .around.history .around.account .around.identifier .box .around.support .box-title .title, .around.account .around.identifier .around.history .box .around.support .box-title .title, .around.history .around.identifier .around.account .box .around.support .box-title .title, .around.identifier .around.account .around.history .box .around.support .box-title .title, .around.history .around.account .around.support .around.identifier .box .box-title .title, .around.account .around.support .around.identifier .around.history .box .box-title .title, .around.history .around.support .around.identifier .around.account .box .box-title .title, .around.support .around.identifier .around.account .around.history .box .box-title .title, .around.history .around.account .around.identifier .around.support .box .box-title .title, .around.account .around.identifier .around.support .around.history .box .box-title .title, .around.history .around.identifier .around.support .around.account .box .box-title .title, .around.identifier .around.support .around.account .around.history .box .box-title .title, .around.history .around.account .around.identifier .box .around.question .box-title .title, .around.account .around.identifier .around.history .box .around.question .box-title .title, .around.history .around.identifier .around.account .box .around.question .box-title .title, .around.identifier .around.account .around.history .box .around.question .box-title .title, .around.history .around.account .around.question .around.identifier .box .box-title .title, .around.account .around.question .around.identifier .around.history .box .box-title .title, .around.history .around.question .around.identifier .around.account .box .box-title .title, .around.question .around.identifier .around.account .around.history .box .box-title .title, .around.history .around.account .around.identifier .around.question .box .box-title .title, .around.account .around.identifier .around.question .around.history .box .box-title .title, .around.history .around.identifier .around.question .around.account .box .box-title .title, .around.identifier .around.question .around.account .around.history .box .box-title .title, .around.history .around.calculator .around.identifier .box .title-group .title, .around.calculator .around.identifier .around.history .box .title-group .title, .around.history .around.identifier .around.calculator .box .title-group .title, .around.identifier .around.calculator .around.history .box .title-group .title, .around.history .around.calculator .around.identifier .box .around.support .box-title .title, .around.calculator .around.identifier .around.history .box .around.support .box-title .title, .around.history .around.identifier .around.calculator .box .around.support .box-title .title, .around.identifier .around.calculator .around.history .box .around.support .box-title .title, .around.history .around.calculator .around.support .around.identifier .box .box-title .title, .around.calculator .around.support .around.identifier .around.history .box .box-title .title, .around.history .around.support .around.identifier .around.calculator .box .box-title .title, .around.support .around.identifier .around.calculator .around.history .box .box-title .title, .around.history .around.calculator .around.identifier .around.support .box .box-title .title, .around.calculator .around.identifier .around.support .around.history .box .box-title .title, .around.history .around.identifier .around.support .around.calculator .box .box-title .title, .around.identifier .around.support .around.calculator .around.history .box .box-title .title, .around.history .around.calculator .around.identifier .box .around.question .box-title .title, .around.calculator .around.identifier .around.history .box .around.question .box-title .title, .around.history .around.identifier .around.calculator .box .around.question .box-title .title, .around.identifier .around.calculator .around.history .box .around.question .box-title .title, .around.history .around.calculator .around.question .around.identifier .box .box-title .title, .around.calculator .around.question .around.identifier .around.history .box .box-title .title, .around.history .around.question .around.identifier .around.calculator .box .box-title .title, .around.question .around.identifier .around.calculator .around.history .box .box-title .title, .around.history .around.calculator .around.identifier .around.question .box .box-title .title, .around.calculator .around.identifier .around.question .around.history .box .box-title .title, .around.history .around.identifier .around.question .around.calculator .box .box-title .title, .around.identifier .around.question .around.calculator .around.history .box .box-title .title, .around.history .around.account .around.calculator .around.identifier .box .title-group .title, .around.account .around.calculator .around.identifier .around.history .box .title-group .title, .around.history .around.identifier .around.account .around.calculator .box .title-group .title, .around.identifier .around.account .around.calculator .around.history .box .title-group .title, .around.history .around.account .around.calculator .around.identifier .box .around.support .box-title .title, .around.account .around.calculator .around.identifier .around.history .box .around.support .box-title .title, .around.history .around.identifier .around.account .around.calculator .box .around.support .box-title .title, .around.identifier .around.account .around.calculator .around.history .box .around.support .box-title .title, .around.history .around.account .around.calculator .around.support .around.identifier .box .box-title .title, .around.account .around.calculator .around.support .around.identifier .around.history .box .box-title .title, .around.history .around.support .around.identifier .around.account .around.calculator .box .box-title .title, .around.support .around.identifier .around.account .around.calculator .around.history .box .box-title .title, .around.history .around.account .around.calculator .around.identifier .around.support .box .box-title .title, .around.account .around.calculator .around.identifier .around.support .around.history .box .box-title .title, .around.history .around.identifier .around.support .around.account .around.calculator .box .box-title .title, .around.identifier .around.support .around.account .around.calculator .around.history .box .box-title .title, .around.history .around.account .around.calculator .around.identifier .box .around.question .box-title .title, .around.account .around.calculator .around.identifier .around.history .box .around.question .box-title .title, .around.history .around.identifier .around.account .around.calculator .box .around.question .box-title .title, .around.identifier .around.account .around.calculator .around.history .box .around.question .box-title .title, .around.history .around.account .around.calculator .around.question .around.identifier .box .box-title .title, .around.account .around.calculator .around.question .around.identifier .around.history .box .box-title .title, .around.history .around.question .around.identifier .around.account .around.calculator .box .box-title .title, .around.question .around.identifier .around.account .around.calculator .around.history .box .box-title .title, .around.history .around.account .around.calculator .around.identifier .around.question .box .box-title .title, .around.account .around.calculator .around.identifier .around.question .around.history .box .box-title .title, .around.history .around.identifier .around.question .around.account .around.calculator .box .box-title .title, .around.identifier .around.question .around.account .around.calculator .around.history .box .box-title .title, .around.history .around.calculator .around.account .around.identifier .box .title-group .title, .around.calculator .around.account .around.identifier .around.history .box .title-group .title, .around.history .around.identifier .around.calculator .around.account .box .title-group .title, .around.identifier .around.calculator .around.account .around.history .box .title-group .title, .around.history .around.calculator .around.account .around.identifier .box .around.support .box-title .title, .around.calculator .around.account .around.identifier .around.history .box .around.support .box-title .title, .around.history .around.identifier .around.calculator .around.account .box .around.support .box-title .title, .around.identifier .around.calculator .around.account .around.history .box .around.support .box-title .title, .around.history .around.calculator .around.account .around.support .around.identifier .box .box-title .title, .around.calculator .around.account .around.support .around.identifier .around.history .box .box-title .title, .around.history .around.support .around.identifier .around.calculator .around.account .box .box-title .title, .around.support .around.identifier .around.calculator .around.account .around.history .box .box-title .title, .around.history .around.calculator .around.account .around.identifier .around.support .box .box-title .title, .around.calculator .around.account .around.identifier .around.support .around.history .box .box-title .title, .around.history .around.identifier .around.support .around.calculator .around.account .box .box-title .title, .around.identifier .around.support .around.calculator .around.account .around.history .box .box-title .title, .around.history .around.calculator .around.account .around.identifier .box .around.question .box-title .title, .around.calculator .around.account .around.identifier .around.history .box .around.question .box-title .title, .around.history .around.identifier .around.calculator .around.account .box .around.question .box-title .title, .around.identifier .around.calculator .around.account .around.history .box .around.question .box-title .title, .around.history .around.calculator .around.account .around.question .around.identifier .box .box-title .title, .around.calculator .around.account .around.question .around.identifier .around.history .box .box-title .title, .around.history .around.question .around.identifier .around.calculator .around.account .box .box-title .title, .around.question .around.identifier .around.calculator .around.account .around.history .box .box-title .title, .around.history .around.calculator .around.account .around.identifier .around.question .box .box-title .title, .around.calculator .around.account .around.identifier .around.question .around.history .box .box-title .title, .around.history .around.identifier .around.question .around.calculator .around.account .box .box-title .title, .around.identifier .around.question .around.calculator .around.account .around.history .box .box-title .title, .around.history .box .around.support .box-title .title, .around.support .around.history .box .box-title .title, .around.history .around.support .box .box-title .title, .around.history .box .around.question .box-title .title, .around.question .around.history .box .box-title .title, .around.history .around.question .box .box-title .title {
   text-transform: uppercase;
 }
 .around.history .box .box-tab .nav-c ul {
@@ -5585,19 +5713,10 @@ a:hover {
 .around.history .box .box-tab .table-responsive .table tbody tr:last-child td {
   border-bottom: none;
 }
-.around.account .box .title-group {
-  margin-bottom: 2.5rem;
-}
-.around.account .box .title-group .title {
-  text-transform: uppercase;
-}
-.around.account .box .title-group .desc {
-  font-size: 18px;
-  line-height: 25px;
-  color: #5f5f5f;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 2.5rem;
+@media (max-width: 1600px) {
+  .around.history .w1140 {
+    width: 100% !important;
+  }
 }
 .around.account .box .box-account .item {
   display: -webkit-box;
@@ -5625,6 +5744,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 17.5rem;
 }
 .around.account .box .box-account .item .account-name h4 {
   margin-left: 1.25rem;
@@ -5636,6 +5756,7 @@ a:hover {
 .around.account .box .box-account .item .account-desc {
   border-left: 3px solid #37adda;
   padding-left: 1rem;
+  width: calc(100% - 28.75rem);
 }
 .around.account .box .box-account .item .account-desc p {
   font-size: 1rem;
@@ -5657,6 +5778,81 @@ a:hover {
 .around.account .box .box-account .item .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+@media (max-width: 1200px) {
+  .around.account .box .box-account .item .account-name {
+    width: 15rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .around.account .box .box-account .item .account-desc {
+    width: calc(100% - 26.25rem);
+  }
+}
+@media (max-width: 992px) {
+  .around.account .box .box-account .item {
+    padding: 1.25rem;
+  }
+  .around.account .box .box-account .item .account-name {
+    width: 10.625rem;
+  }
+  .around.account .box .box-account .item .account-name h4 {
+    margin-left: 0;
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+  }
+  .around.account .box .box-account .item .account-desc {
+    width: calc(100% - 20rem);
+  }
+  .around.account .box .box-account .item .account-desc p {
+    font-size: 0.875rem;
+  }
+  .around.account .box .box-account .item .btn {
+    width: 8.125rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 767px) {
+  .around.account .box .box-account .item {
+    padding: 1.875rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: inherit;
+  }
+  .around.account .box .box-account .item .account-name {
+    width: 100%;
+  }
+  .around.account .box .box-account .item .account-name h4 {
+    margin-left: 0;
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+  }
+  .around.account .box .box-account .item .account-desc {
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    text-align: center;
+  }
+  .around.account .box .box-account .item .account-desc p {
+    font-size: 0.875rem;
+  }
+  .around.account .box .box-account .item .btn {
+    width: 8.125rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 1200px) {
+  .around.account .w930 {
+    width: 100% !important;
+  }
 }
 .around.calculator .box .box-calc {
   display: -webkit-box;
@@ -6232,11 +6428,133 @@ a:hover {
 .aroundtwo .round-r .form-btn {
   text-align: center;
 }
+@media (max-width: 992px) {
+  .aroundtwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aroundtwo .round-l {
+    width: 100%;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 0;
+  }
+  .aroundtwo .round-r {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.25rem;
+  }
+  .aroundtwo .round-r .info-title {
+    margin-bottom: 1.25rem;
+  }
+  .aroundtwo .round-r .form-box-bank {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aroundtwo .round-r .form-box-bank .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 48%;
+  }
+  .aroundtwo .round-r .form-box-bank .form-group label {
+    width: 100%;
+  }
+  .aroundtwo .round-r .form-box-bank .form-group .form-control {
+    width: 100%;
+  }
+  .aroundtwo .round-r .form-btn .btn {
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 10rem;
+  }
+}
+@media (max-width: 767px) {
+  .aroundtwo .round-l {
+    padding: 2.5rem;
+  }
+  .aroundtwo .round-r {
+    padding: 2.5rem;
+  }
+  .aroundtwo .round-r .desc {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .aroundtwo .round-r .title {
+    font-size: 1.25rem;
+    margin: 1rem 0 1.875rem;
+  }
+  .aroundtwo .round-r .form-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aroundtwo .round-r .form-box .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .aroundtwo .round-r .form-box .form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .aroundtwo .round-r .form-box .form-group .form-control {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  .aroundtwo .round-r .info-title {
+    margin: 1.25rem 0;
+  }
+  .aroundtwo .round-r .info-title h4 {
+    font-size: 1rem;
+  }
+  .aroundtwo .round-r .form-box-bank .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .aroundtwo .round-r .form-box-bank .form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .aroundtwo .round-r .form-box-bank .form-group .form-control {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  .aroundtwo .round-r .form-btn {
+    margin-top: 0.75rem;
+  }
+  .aroundtwo .round-r .form-btn .btn {
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 10rem;
+  }
+}
+@media (max-width: 500px) {
+  .aroundtwo .round-l {
+    padding: 1.25rem;
+  }
+  .aroundtwo .round-r {
+    padding: 1.25rem;
+  }
+}
 
-.title-group, .around .box .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
+.title-group, .around .box .title-group, .around.support .box-title, .around.question .box-title, .around.account .box .title-group, .around.account .box .around.support .box-title, .around.account .box .around.question .box-title, .around.calculator .box .title-group, .around.calculator .box .around.support .box-title, .around.calculator .box .around.question .box-title, .around.identifier .box .title-group, .around.identifier .box .around.support .box-title, .around.identifier .box .around.question .box-title {
   margin-bottom: 3.75rem;
 }
-.title-group .title, .around .box .title-group .title {
+.title-group .title, .around .box .title-group .title, .around.support .box-title .title, .around.question .box-title .title {
   text-transform: uppercase;
   font-size: 1.75rem;
   line-height: 25px;
@@ -6244,7 +6562,7 @@ a:hover {
   font-weight: 600;
   text-align: center;
 }
-.title-group .desc, .around .box .title-group .desc {
+.title-group .desc, .around .box .title-group .desc, .around.support .box-title .desc, .around.question .box-title .desc {
   font-size: 18px;
   line-height: 25px;
   color: #5f5f5f;
@@ -6253,24 +6571,24 @@ a:hover {
   padding-top: 2.5rem;
 }
 @media (max-width: 1200px) {
-  .title-group, .around .box .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
+  .title-group, .around .box .title-group, .around.support .box-title, .around.question .box-title, .around.account .box .title-group, .around.account .box .around.support .box-title, .around.account .box .around.question .box-title, .around.calculator .box .title-group, .around.calculator .box .around.support .box-title, .around.calculator .box .around.question .box-title, .around.identifier .box .title-group, .around.identifier .box .around.support .box-title, .around.identifier .box .around.question .box-title {
     margin-bottom: 2.5rem;
   }
-  .title-group .title, .around .box .title-group .title {
+  .title-group .title, .around .box .title-group .title, .around.support .box-title .title, .around.question .box-title .title {
     text-transform: uppercase;
   }
-  .title-group .desc, .around .box .title-group .desc {
+  .title-group .desc, .around .box .title-group .desc, .around.support .box-title .desc, .around.question .box-title .desc {
     padding-top: 1.25rem;
   }
 }
 @media (max-width: 767px) {
-  .title-group, .around .box .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
+  .title-group, .around .box .title-group, .around.support .box-title, .around.question .box-title, .around.account .box .title-group, .around.account .box .around.support .box-title, .around.account .box .around.question .box-title, .around.calculator .box .title-group, .around.calculator .box .around.support .box-title, .around.calculator .box .around.question .box-title, .around.identifier .box .title-group, .around.identifier .box .around.support .box-title, .around.identifier .box .around.question .box-title {
     margin-bottom: 2rem;
   }
-  .title-group .title, .around .box .title-group .title {
+  .title-group .title, .around .box .title-group .title, .around.support .box-title .title, .around.question .box-title .title {
     font-size: 1.5rem;
   }
-  .title-group .desc, .around .box .title-group .desc {
+  .title-group .desc, .around .box .title-group .desc, .around.support .box-title .desc, .around.question .box-title .desc {
     padding-top: 0.5rem;
     font-size: 0.875rem;
   }
