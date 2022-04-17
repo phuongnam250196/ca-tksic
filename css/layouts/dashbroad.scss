@@ -7,6 +7,8 @@ $cl-danger: #ff6767;
 $cl-success: #2ca746;
 $cl-secondary: #626262;
 $cl-text: #4d4d4d;
+
+$db1: #f5f8fa;
 .body {
   .ct {
     display: flex;
@@ -76,6 +78,26 @@ $cl-text: #4d4d4d;
             .item {
               width: 30%;
               margin-bottom: rem(20);
+            }
+          }
+        }
+        @media (max-width: 500px) {
+          .list {
+            flex-wrap: wrap;
+            .item {
+              width: 32%;
+              margin-bottom: rem(20);
+              .img-f {
+                height: rem(40);
+                line-height: rem(40);
+                width: auto;
+                img {
+                  height: 100%;
+                }
+              }
+              h4 {
+                font-size: rem(14);
+              }
             }
           }
         }
@@ -184,6 +206,41 @@ $cl-text: #4d4d4d;
             }
           }
         }
+        @media (max-width: 993px) {
+          .ct-tab {
+            .tab-top {
+              .title {
+                font-size: rem(16);
+              }
+              .nav {
+                list-style: none;
+                li {
+                  a {
+                    padding: rem(8) rem(16);
+                    font-size: rem(14);
+                    margin-left: rem(8);
+                  }
+                }
+              }
+            }
+          }
+        }
+        @media (max-width:  767px) {
+          margin-top: rem(12);
+          .ct-tab {
+            .tab-body {
+              table {
+                width: rem(700);
+                font-size: rem(16);
+                tr {
+                  td {
+                    padding: rem(30);
+                  }
+                }
+              }
+            }
+          }
+        }
       }
       .ct-chart {
         @extend .ct-table;
@@ -231,9 +288,17 @@ $cl-text: #4d4d4d;
           .item {
             width: 46%;
             padding: rem(20);
+            &:first-child {
+              padding-bottom: rem(4);
+            }
+            &:nth-child(2) {
+              padding-bottom: rem(4);
+            }
             p {
+              font-weight: 600;
               &:first-child {
                 color: $c-text;
+                font-weight: normal;
               }
             }
           }
@@ -266,13 +331,13 @@ $cl-text: #4d4d4d;
               margin-bottom: 0;
             }
             .img {
-              background: $cl-2;
-              border-radius: rem(16);
+              background: $db1;
+              border-radius: rem(13);
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 48px;
-              height: 48px;
+              width: rem(48);
+              height: rem(48);
               img {
                 width: 60%;
                 height: auto;
@@ -281,6 +346,7 @@ $cl-text: #4d4d4d;
             .box {
               margin-left: rem(16);
               p {
+                line-height: 1.5;
                 &:first-child {
                   font-weight: bold;
                   color: $cl-text;
@@ -343,8 +409,10 @@ $cl-text: #4d4d4d;
       }
     }
     @media (max-width: 1600px) {
-      &.main-l {
-        width: 69%;
+      .main {
+        &.main-l {
+          width: 69%;
+        }
       }
       .sidebar-right {
         width: 29%;
@@ -352,8 +420,11 @@ $cl-text: #4d4d4d;
     }
     @media (max-width: 1200px) {
       flex-wrap: wrap;
-      &.main-l {
-        width: 100%;
+      .main {
+        margin-bottom: rem(40);
+        &.main-l {
+          width: 100%;
+        }
       }
       .sidebar-right {
         width: 100%;

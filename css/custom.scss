@@ -193,20 +193,7 @@ $cl-btn: #36a7d6;
 	.box {
 		width: 100%;
 		.title-group {
-			.title {
-				font-size: rem(28);
-				line-height: 25px;
-				color: $cl-blue;
-				font-weight: 600;
-				text-align: center;
-			}
-			p {
-				font-size: rem(18);
-				color: $cl-secondary;
-				font-weight: 600;
-				text-align: center;
-				padding-top: rem(20);
-			}
+			@extend .title-group;
 		}
 		.box-link {
 			padding: 0 0 rem(40);
@@ -347,6 +334,8 @@ $cl-btn: #36a7d6;
 				margin-bottom: 32px;
 				ul {
 					display: flex;
+					justify-content: center;
+					overflow: hidden;
 					li {
 						width: 50%;
 						text-align: center;
@@ -405,7 +394,15 @@ $cl-btn: #36a7d6;
 			.btn {
 				margin: rem(60) 0 rem(100);
 			}
-			
+			@media (max-width: 767px) {
+				padding-top: rem(0);
+				.btn {
+					margin: rem(40) 0 0;
+					border-radius: rem(8);
+					height: rem(40);
+					width: rem(160);
+				}
+			}
 		}
 	}
 
@@ -454,6 +451,11 @@ $cl-btn: #36a7d6;
 							}
 						}
 					}
+					@media (max-width: 1200px) {
+						.table {
+							width: rem(1200);
+						}
+					}
 				}
 
 				.box-title {
@@ -466,6 +468,9 @@ $cl-btn: #36a7d6;
 						color: $cl-blue;
 						text-align: center;
 						font-weight: 600;
+					}
+					@media (max-width: 480px) {
+						margin: rem(20) 0 rem(20);
 					}
 				}
 
@@ -500,6 +505,21 @@ $cl-btn: #36a7d6;
 							}
 						}
 					}
+					@media (max-width: 1600px) {
+						margin-bottom: rem(32);
+						.list {
+							flex-wrap: wrap;
+							justify-content: center;
+							.item {
+								padding: 12px;
+								border-radius: rem(12);
+								width: rem(142);
+								height: rem(55);
+								margin: 0 rem(20) rem(20) 0;
+								
+							}
+						}
+					}
 				}
 				.box-content {
 					.bx1 {
@@ -531,6 +551,18 @@ $cl-btn: #36a7d6;
 								}
 							}
 						}
+						@media (max-width: 767px) {
+							flex-direction: column;
+							.bx1-child {
+								.bx1-group {
+									p {
+										&:last-child {
+											text-align: right;
+										}
+									}
+								}
+							}
+						}
 					}
 					.bx2 {
 						text-align: center;
@@ -549,6 +581,16 @@ $cl-btn: #36a7d6;
 							}
 							&:hover {
 								opacity: 0.7;
+							}
+						}
+						@media (max-width: 767px) {
+							padding: rem(20) 0 0;
+						}
+						@media (max-width: 480px) {
+							a {
+								&.btn {
+									width: rem(140);
+								}
 							}
 						}
 					}
@@ -574,6 +616,12 @@ $cl-btn: #36a7d6;
 					font-weight: 600;
 					text-align: center;
 					padding: rem(40) 0 rem(60);
+					@media (max-width: 992px) {
+						padding: rem(12) 0 rem(40);
+					}
+					@media (max-width: 480px) {
+						padding: 0 0 rem(24);
+					}
 				}
 				.withdraw-money__bank {
 					display: flex;
@@ -582,8 +630,8 @@ $cl-btn: #36a7d6;
 					flex-wrap: wrap;
 					margin-bottom: 24px;
 					.item  {
-						width: 184px;
-						height: 172px;
+						width: rem(184);
+						height: rem(172);
 						
 						input[type="radio"] {
 							display: none;
@@ -594,7 +642,7 @@ $cl-btn: #36a7d6;
 							justify-content: center;
 							align-items: center;
 							flex-direction: column;
-							border-radius: 12px;
+							border-radius: rem(12);
 							filter: drop-shadow(0px 5px 7.5px rgba(0,0,0,0.15));
 							background-color: #ffffff;
 							border: 1px solid $cl-2;
@@ -614,15 +662,36 @@ $cl-btn: #36a7d6;
 						border-radius: 12px;
 						border: 2px solid $cl-blue;
 					}
+					@media (max-width: 1200px) {
+						justify-content: center;
+						margin-bottom: 0;
+						.item  {
+							width: rem(184);
+							height: rem(172);
+							margin: 0 rem(20) rem(32);
+						}
+					}
+					@media (max-width: 992px) {
+						justify-content: center;
+						margin-bottom: 0;
+						.item  {
+							width: rem(184);
+							height: rem(172);
+							margin: 0 rem(6) rem(20);
+						}
+					}
 					@media (max-width: 500px) {
 						.item  {
-							width: 50%;
-							padding: 8px;
+							width: rem(160);
+							height: rem(152);
+							img {
+								padding: rem(32);
+							}
 						}
 					}
 				}
 				.withdraw-money__form {
-					width: 500px;
+					width: rem(500);
 					margin: 0 auto;
 					text-align: center;
 					padding: 32px 0;
@@ -651,7 +720,32 @@ $cl-btn: #36a7d6;
 							}
 						}
 					}
+					@media (max-width: 992px) {
+						padding: 0;
+						.form-group {
+							border-radius: 12px;
+							margin: rem(20) 0 rem(40);
+						}
+						.form-btn {
+							.btn {
+								border-radius: rem(8);
+								width: rem(160);
+							}
+						}
+					}
+					@media (max-width: 767px) {
+						width: 100%;
+						.form-group {
+							border-radius: 12px;
+							margin: rem(20) 0 rem(30);
+						}
+					}
 				}
+			}
+		}
+		@media (max-width: 1200px) {
+			.w1140 {
+				width: 100% !important;
 			}
 		}
 	}
@@ -670,6 +764,114 @@ $cl-btn: #36a7d6;
 				.form-btn {
 					text-align: center;
 					padding-top: rem(40);
+				}
+			}
+		}
+
+		@media (max-width: 1200px) {
+			.w600 {
+				width: 100% !important;
+			}
+		}
+		@media (max-width: 992px) {
+			.box {
+				.box-tab {
+					.box-title {
+						padding-top: rem(0);
+					}
+					.withdraw-money__form {
+						padding: 0;
+					}
+					.form-btn {
+						padding-top: rem(20);
+					}
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			.box {
+				.box-tab {
+					.box-title {
+						padding-top: rem(0);
+					}
+					.withdraw-money__form {
+						
+					}
+					.withdraw-money__bank {
+						justify-content: space-between;
+						.item {
+							width: rem(150);
+							height: rem(140);
+							margin: 0;
+							label {
+								p {
+									margin-bottom: rem(8);
+									font-size: rem(10);
+								}
+							}
+						}
+					}
+					.form-btn {
+						padding-top: rem(32);
+						.btn {
+							width: rem(160);
+							border-radius: rem(8);
+							height: rem(40);
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 500px) {
+			.box {
+				.box-tab {
+					.box-title {
+						padding-top: rem(0);
+						h4 {
+							font-size: rem(14);
+						}
+					}
+					.withdraw-money__form {
+						.form-group {
+							border-radius: 12px;
+							margin: rem(20) 0 rem(30);
+							label {
+								font-size: rem(14);
+								margin-bottom: rem(20);
+							}
+							.form-control {
+								height: rem(40);
+								font-size: rem(16);
+								margin-bottom: 0;
+							}
+						}
+					}
+					.withdraw-money__bank {
+						justify-content: space-between;
+						.item {
+							width: rem(110);
+							height: rem(100);
+							margin: 0;
+							label {
+								p {
+									margin-bottom: rem(8);
+									font-size: rem(8);
+								}
+							}
+							img {
+								padding-top: 0;
+								padding-bottom: 0;
+							}
+						}
+					}
+					.form-btn {
+						padding-top: rem(32);
+						.btn {
+							width: rem(160);
+							border-radius: rem(8);
+							height: rem(40);
+						}
+					}
 				}
 			}
 		}
@@ -1524,6 +1726,11 @@ $cl-btn: #36a7d6;
 	margin-bottom: rem(60);
 	.title {
 		text-transform: uppercase;
+		font-size: rem(28);
+		line-height: 25px;
+		color: $cl-blue;
+		font-weight: 600;
+		text-align: center;
 	}
 	.desc {
 		font-size: 18px;

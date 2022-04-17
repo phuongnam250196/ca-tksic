@@ -2803,9 +2803,15 @@ a:hover {
 }
 #header .nav .nav-left .search .input-group input {
   padding-left: 2rem;
-  background: #daf1f9;
+  background: #f5f8fa;
   border-radius: 0.625rem;
   width: 400px;
+  border: 1px solid #f5f8fa;
+}
+#header .nav .nav-left .search .input-group input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #daf1f9;
 }
 #header .nav .nav-left .search .input-group .input-group-prepend {
   position: absolute;
@@ -3370,6 +3376,27 @@ a:hover {
     margin-bottom: 1.25rem;
   }
 }
+@media (max-width: 500px) {
+  .body .ct .main .ct-head .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .body .ct .main .ct-head .list .item {
+    width: 32%;
+    margin-bottom: 1.25rem;
+  }
+  .body .ct .main .ct-head .list .item .img-f {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: auto;
+  }
+  .body .ct .main .ct-head .list .item .img-f img {
+    height: 100%;
+  }
+  .body .ct .main .ct-head .list .item h4 {
+    font-size: 0.875rem;
+  }
+}
 .body .ct .main .ct-table, .body .ct .main .ct-chart {
   margin-top: 2.5rem;
 }
@@ -3460,6 +3487,31 @@ a:hover {
     margin-left: 0.5rem;
   }
 }
+@media (max-width: 993px) {
+  .body .ct .main .ct-table .ct-tab .tab-top .title, .body .ct .main .ct-chart .ct-tab .tab-top .title {
+    font-size: 1rem;
+  }
+  .body .ct .main .ct-table .ct-tab .tab-top .nav, .body .ct .main .ct-chart .ct-tab .tab-top .nav {
+    list-style: none;
+  }
+  .body .ct .main .ct-table .ct-tab .tab-top .nav li a, .body .ct .main .ct-chart .ct-tab .tab-top .nav li a {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .body .ct .main .ct-table, .body .ct .main .ct-chart {
+    margin-top: 0.75rem;
+  }
+  .body .ct .main .ct-table .ct-tab .tab-body table, .body .ct .main .ct-chart .ct-tab .tab-body table {
+    width: 43.75rem;
+    font-size: 1rem;
+  }
+  .body .ct .main .ct-table .ct-tab .tab-body table tr td, .body .ct .main .ct-chart .ct-tab .tab-body table tr td {
+    padding: 1.875rem;
+  }
+}
 .body .ct .main .ct-chart .chart-c {
   padding: 1.25rem 3.75rem;
 }
@@ -3511,8 +3563,18 @@ a:hover {
   width: 46%;
   padding: 1.25rem;
 }
+.body .ct .sidebar-right .sidebar-r__1 .list .item:first-child {
+  padding-bottom: 0.25rem;
+}
+.body .ct .sidebar-right .sidebar-r__1 .list .item:nth-child(2) {
+  padding-bottom: 0.25rem;
+}
+.body .ct .sidebar-right .sidebar-r__1 .list .item p {
+  font-weight: 600;
+}
 .body .ct .sidebar-right .sidebar-r__1 .list .item p:first-child {
   color: #a1a4ae;
+  font-weight: normal;
 }
 .body .ct .sidebar-right .sidebar-r__2 {
   padding: 2.5rem 1.25rem;
@@ -3546,8 +3608,8 @@ a:hover {
   margin-bottom: 0;
 }
 .body .ct .sidebar-right .sidebar-r__2 .list .item .img {
-  background: #e2e2e2;
-  border-radius: 1rem;
+  background: #f5f8fa;
+  border-radius: 0.8125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3557,8 +3619,8 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
 }
 .body .ct .sidebar-right .sidebar-r__2 .list .item .img img {
   width: 60%;
@@ -3566,6 +3628,9 @@ a:hover {
 }
 .body .ct .sidebar-right .sidebar-r__2 .list .item .box {
   margin-left: 1rem;
+}
+.body .ct .sidebar-right .sidebar-r__2 .list .item .box p {
+  line-height: 1.5;
 }
 .body .ct .sidebar-right .sidebar-r__2 .list .item .box p:first-child {
   font-weight: bold;
@@ -3625,7 +3690,7 @@ a:hover {
   color: #4d4d4d;
 }
 @media (max-width: 1600px) {
-  .body .ct.main-l {
+  .body .ct .main.main-l {
     width: 69%;
   }
   .body .ct .sidebar-right {
@@ -3637,7 +3702,10 @@ a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .body .ct.main-l {
+  .body .ct .main {
+    margin-bottom: 2.5rem;
+  }
+  .body .ct .main.main-l {
     width: 100%;
   }
   .body .ct .sidebar-right {
@@ -4563,20 +4631,6 @@ a:hover {
 .around .box {
   width: 100%;
 }
-.around .box .title-group .title {
-  font-size: 1.75rem;
-  line-height: 25px;
-  color: #005aaa;
-  font-weight: 600;
-  text-align: center;
-}
-.around .box .title-group p, .around.identifier .box .title-group p, .around.calculator .box .title-group p {
-  font-size: 1.125rem;
-  color: #626262;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 1.25rem;
-}
 .around .box .box-link {
   padding: 0 0 2.5rem;
 }
@@ -4718,6 +4772,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 .around .box .box-tab .nav-c ul li {
   width: 50%;
@@ -4769,6 +4827,17 @@ a:hover {
 .around .box .collaborator-register .btn {
   margin: 3.75rem 0 6.25rem;
 }
+@media (max-width: 767px) {
+  .around .box .collaborator-register {
+    padding-top: 0rem;
+  }
+  .around .box .collaborator-register .btn {
+    margin: 2.5rem 0 0;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 10rem;
+  }
+}
 .around.collaborators .box .box-tab .table-responsive .table tr td:first-child span {
   display: block;
   font-weight: 400;
@@ -4801,6 +4870,11 @@ a:hover {
   color: #fff;
   background: #005aaa;
 }
+@media (max-width: 1200px) {
+  .around.collaborators .box .box-tab .table-responsive .table {
+    width: 75rem;
+  }
+}
 .around.collaborators .box .box-tab .box-title {
   background: #daf1f9;
   border-radius: 0.5rem;
@@ -4812,6 +4886,11 @@ a:hover {
   color: #005aaa;
   text-align: center;
   font-weight: 600;
+}
+@media (max-width: 480px) {
+  .around.collaborators .box .box-tab .box-title {
+    margin: 1.25rem 0 1.25rem;
+  }
 }
 .around.collaborators .box .box-tab .box-other-product {
   margin-bottom: 3.75rem;
@@ -4855,6 +4934,25 @@ a:hover {
   background-color: #005aaa;
   color: #fff;
 }
+@media (max-width: 1600px) {
+  .around.collaborators .box .box-tab .box-other-product {
+    margin-bottom: 2rem;
+  }
+  .around.collaborators .box .box-tab .box-other-product .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .around.collaborators .box .box-tab .box-other-product .list .item {
+    padding: 12px;
+    border-radius: 0.75rem;
+    width: 8.875rem;
+    height: 3.4375rem;
+    margin: 0 1.25rem 1.25rem 0;
+  }
+}
 .around.collaborators .box .box-tab .box-content .bx1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4896,6 +4994,17 @@ a:hover {
 .around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group p .success {
   color: #2ca746;
 }
+@media (max-width: 767px) {
+  .around.collaborators .box .box-tab .box-content .bx1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .around.collaborators .box .box-tab .box-content .bx1 .bx1-child .bx1-group p:last-child {
+    text-align: right;
+  }
+}
 .around.collaborators .box .box-tab .box-content .bx2 {
   text-align: center;
   padding: 40px 0 20px;
@@ -4914,6 +5023,16 @@ a:hover {
 .around.collaborators .box .box-tab .box-content .bx2 a:hover {
   opacity: 0.7;
 }
+@media (max-width: 767px) {
+  .around.collaborators .box .box-tab .box-content .bx2 {
+    padding: 1.25rem 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .around.collaborators .box .box-tab .box-content .bx2 a.btn {
+    width: 8.75rem;
+  }
+}
 .around.collaborators .box .box-tab .box-content .bx-title {
   font-size: 16px;
   line-height: 25px;
@@ -4930,6 +5049,16 @@ a:hover {
   text-align: center;
   padding: 2.5rem 0 3.75rem;
 }
+@media (max-width: 992px) {
+  .around.recharge .box .box-tab .box-title, .around.recharge-vnpay .box .box-tab .box-title {
+    padding: 0.75rem 0 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .around.recharge .box .box-tab .box-title, .around.recharge-vnpay .box .box-tab .box-title {
+    padding: 0 0 1.5rem;
+  }
+}
 .around.recharge .box .box-tab .withdraw-money__bank, .around.recharge-vnpay .box .box-tab .withdraw-money__bank {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4945,8 +5074,8 @@ a:hover {
   margin-bottom: 24px;
 }
 .around.recharge .box .box-tab .withdraw-money__bank .item, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
-  width: 184px;
-  height: 172px;
+  width: 11.5rem;
+  height: 10.75rem;
 }
 .around.recharge .box .box-tab .withdraw-money__bank .item input[type=radio], .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item input[type=radio] {
   display: none;
@@ -4966,7 +5095,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   -webkit-filter: drop-shadow(0px 5px 7.5px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 5px 7.5px rgba(0, 0, 0, 0.15));
   background-color: #ffffff;
@@ -4986,14 +5115,43 @@ a:hover {
   border-radius: 12px;
   border: 2px solid #005aaa;
 }
+@media (max-width: 1200px) {
+  .around.recharge .box .box-tab .withdraw-money__bank, .around.recharge-vnpay .box .box-tab .withdraw-money__bank {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+  .around.recharge .box .box-tab .withdraw-money__bank .item, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
+    width: 11.5rem;
+    height: 10.75rem;
+    margin: 0 1.25rem 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .around.recharge .box .box-tab .withdraw-money__bank, .around.recharge-vnpay .box .box-tab .withdraw-money__bank {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+  .around.recharge .box .box-tab .withdraw-money__bank .item, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
+    width: 11.5rem;
+    height: 10.75rem;
+    margin: 0 0.375rem 1.25rem;
+  }
+}
 @media (max-width: 500px) {
   .around.recharge .box .box-tab .withdraw-money__bank .item, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
-    width: 50%;
-    padding: 8px;
+    width: 10rem;
+    height: 9.5rem;
+  }
+  .around.recharge .box .box-tab .withdraw-money__bank .item img, .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item img {
+    padding: 2rem;
   }
 }
 .around.recharge .box .box-tab .withdraw-money__form, .around.recharge-vnpay .box .box-tab .withdraw-money__form {
-  width: 500px;
+  width: 31.25rem;
   margin: 0 auto;
   text-align: center;
   padding: 32px 0;
@@ -5024,6 +5182,33 @@ a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+@media (max-width: 992px) {
+  .around.recharge .box .box-tab .withdraw-money__form, .around.recharge-vnpay .box .box-tab .withdraw-money__form {
+    padding: 0;
+  }
+  .around.recharge .box .box-tab .withdraw-money__form .form-group, .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group {
+    border-radius: 12px;
+    margin: 1.25rem 0 2.5rem;
+  }
+  .around.recharge .box .box-tab .withdraw-money__form .form-btn .btn, .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-btn .btn {
+    border-radius: 0.5rem;
+    width: 10rem;
+  }
+}
+@media (max-width: 767px) {
+  .around.recharge .box .box-tab .withdraw-money__form, .around.recharge-vnpay .box .box-tab .withdraw-money__form {
+    width: 100%;
+  }
+  .around.recharge .box .box-tab .withdraw-money__form .form-group, .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group {
+    border-radius: 12px;
+    margin: 1.25rem 0 1.875rem;
+  }
+}
+@media (max-width: 1200px) {
+  .around.recharge .w1140, .around.recharge-vnpay .w1140 {
+    width: 100% !important;
+  }
+}
 .around.recharge-vnpay .box .box-tab .box-title {
   font-weight: 400;
   padding: 0;
@@ -5035,6 +5220,96 @@ a:hover {
 .around.recharge-vnpay .box .box-tab .form-btn {
   text-align: center;
   padding-top: 2.5rem;
+}
+@media (max-width: 1200px) {
+  .around.recharge-vnpay .w600 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 992px) {
+  .around.recharge-vnpay .box .box-tab .box-title {
+    padding-top: 0rem;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__form {
+    padding: 0;
+  }
+  .around.recharge-vnpay .box .box-tab .form-btn {
+    padding-top: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .around.recharge-vnpay .box .box-tab .box-title {
+    padding-top: 0rem;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__bank {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
+    width: 9.375rem;
+    height: 8.75rem;
+    margin: 0;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item label p {
+    margin-bottom: 0.5rem;
+    font-size: 0.625rem;
+  }
+  .around.recharge-vnpay .box .box-tab .form-btn {
+    padding-top: 2rem;
+  }
+  .around.recharge-vnpay .box .box-tab .form-btn .btn {
+    width: 10rem;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .around.recharge-vnpay .box .box-tab .box-title {
+    padding-top: 0rem;
+  }
+  .around.recharge-vnpay .box .box-tab .box-title h4 {
+    font-size: 0.875rem;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group {
+    border-radius: 12px;
+    margin: 1.25rem 0 1.875rem;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group label {
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__form .form-group .form-control {
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__bank {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item {
+    width: 6.875rem;
+    height: 6.25rem;
+    margin: 0;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item label p {
+    margin-bottom: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .around.recharge-vnpay .box .box-tab .withdraw-money__bank .item img {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .around.recharge-vnpay .box .box-tab .form-btn {
+    padding-top: 2rem;
+  }
+  .around.recharge-vnpay .box .box-tab .form-btn .btn {
+    width: 10rem;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+  }
 }
 .around.withdraw .box .box-tab .box-title {
   font-size: 18px;
@@ -5916,13 +6191,18 @@ a:hover {
   text-align: center;
 }
 
-.title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
+.title-group, .around .box .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
   margin-bottom: 3.75rem;
 }
-.title-group .title, .around.calculator .box .title-group .title, .around.identifier .box .title-group .title {
+.title-group .title, .around .box .title-group .title {
   text-transform: uppercase;
+  font-size: 1.75rem;
+  line-height: 25px;
+  color: #005aaa;
+  font-weight: 600;
+  text-align: center;
 }
-.title-group .desc, .around.calculator .box .title-group .desc, .around.identifier .box .title-group .desc {
+.title-group .desc, .around .box .title-group .desc {
   font-size: 18px;
   line-height: 25px;
   color: #5f5f5f;
@@ -5931,24 +6211,24 @@ a:hover {
   padding-top: 2.5rem;
 }
 @media (max-width: 1200px) {
-  .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
+  .title-group, .around .box .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
     margin-bottom: 2.5rem;
   }
-  .title-group .title, .around.calculator .box .title-group .title, .around.identifier .box .title-group .title {
+  .title-group .title, .around .box .title-group .title {
     text-transform: uppercase;
   }
-  .title-group .desc, .around.calculator .box .title-group .desc, .around.identifier .box .title-group .desc {
+  .title-group .desc, .around .box .title-group .desc {
     padding-top: 1.25rem;
   }
 }
 @media (max-width: 767px) {
-  .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
+  .title-group, .around .box .title-group, .around.calculator .box .title-group, .around.identifier .box .title-group {
     margin-bottom: 2rem;
   }
-  .title-group .title, .around.calculator .box .title-group .title, .around.identifier .box .title-group .title {
+  .title-group .title, .around .box .title-group .title {
     font-size: 1.5rem;
   }
-  .title-group .desc, .around.calculator .box .title-group .desc, .around.identifier .box .title-group .desc {
+  .title-group .desc, .around .box .title-group .desc {
     padding-top: 0.5rem;
     font-size: 0.875rem;
   }

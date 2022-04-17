@@ -25,9 +25,14 @@
 
                     input {
                         padding-left: rem(32);
-                        background: #daf1f9;
+                        background: #f5f8fa;;
                         border-radius: rem(10);
                         width: 400px;
+                        border: 1px solid #f5f8fa;
+                        &:focus {
+                          box-shadow: none;
+                          border: 1px solid #daf1f9;
+                        }
                     }
 
                     .input-group-prepend {
