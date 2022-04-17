@@ -2911,9 +2911,51 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+#header .nav .nav-right .profile:hover .info {
+  color: #055ba9;
 }
 #header .nav .nav-right .profile img {
   margin-right: 0.5rem;
+}
+#header .nav .nav-right .profile .box-password {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  width: 20rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  -webkit-filter: drop-shadow(0px 3px 13.5px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 3px 13.5px rgba(0, 0, 0, 0.1));
+  padding: 40px;
+}
+#header .nav .nav-right .profile .box-password .form-group {
+  margin-bottom: 1.25rem;
+}
+#header .nav .nav-right .profile .box-password .form-group label {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #626262;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+#header .nav .nav-right .profile .box-password .form-group .form-control {
+  border: 1px solid #35acd9;
+}
+#header .nav .nav-right .profile .box-password .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#header .nav .nav-right .profile .box-password .form-btn {
+  text-align: center;
+}
+#header .nav .nav-right .profile .box-password .form-btn .btn {
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
 }
 @media (max-width: 993px) {
   #header .nav .nav-right .calculator {
