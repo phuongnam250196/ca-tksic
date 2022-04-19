@@ -41,6 +41,8 @@ $db1: #f5f8fa;
             h4 {
               font-size: rem(16);
               padding-top: rem(20);
+              font-weight: 600;
+              color: #4d4d4d;
             }
             &:last-child {
               h4 {
@@ -296,6 +298,7 @@ $db1: #f5f8fa;
             }
             p {
               font-weight: 600;
+              color: #4d4d4d;
               &:first-child {
                 color: $c-text;
                 font-weight: normal;
@@ -450,6 +453,10 @@ $db1: #f5f8fa;
     }
     @media (max-width: 993px) {
       font-size: rem(16);
+    }
+    @media (max-width: 400px) {
+      padding: 0 0 rem(16) 0;
+      font-size: rem(14);
     }
   }
 }

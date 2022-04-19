@@ -3,6 +3,14 @@
     border-bottom: 1.5px solid #e2e2e2;
     padding: rem(24) 0;
     transition: padding 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: rem(12) 0;
+    transition: padding 1s;
+    z-index: 99;
     .nav {
         display: flex;
         justify-content: space-between;
@@ -128,6 +136,12 @@
                 img {
                     margin-right: rem(8);
                 }
+                .info {
+                  span {
+                    font-weight: 600;
+                    color: #4d4d4d;
+                  }
+                }
             }
 
             .profile {
@@ -143,6 +157,12 @@
                 }
                 img {
                     margin-right: rem(8);
+                }
+                .info {
+                  p {
+                    font-weight: 600;
+                    color: #4d4d4d;
+                  }
                 }
                 .box-password {
                   position: absolute;
@@ -200,16 +220,16 @@
         }
     }
 
-    &.scroll {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      padding: rem(12) 0;
-      transition: padding 1s;
-      z-index: 99;
-    }
+    // &.scroll {
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   background: #fff;
+    //   padding: rem(12) 0;
+    //   transition: padding 1s;
+    //   z-index: 99;
+    // }
 }
 
 #menu {

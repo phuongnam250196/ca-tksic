@@ -658,6 +658,10 @@ $cl-btn: #36a7d6;
 							cursor: pointer;
 							width: initial;
 						}
+						&:hover {
+							border-radius: 12px;
+							border: 2px solid $cl-blue;
+						}
 					}
 					input[type="radio"]:checked + label {
 						border-radius: 12px;
@@ -744,7 +748,7 @@ $cl-btn: #36a7d6;
 				}
 			}
 		}
-		@media (max-width: 1200px) {
+		@media (max-width: 1400px) {
 			.w1140 {
 				width: 100% !important;
 			}
@@ -871,6 +875,54 @@ $cl-btn: #36a7d6;
 							width: rem(160);
 							border-radius: rem(8);
 							height: rem(40);
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 400px) {
+			.box {
+				.box-tab {
+					.withdraw-money__bank {
+						.item {
+							width: rem(100);
+							height: rem(100);
+							margin: 0;
+							label {
+								p {
+									margin-bottom: rem(8);
+									font-size: rem(8);
+								}
+							}
+							img {
+								padding-top: 0;
+								padding-bottom: 0;
+							}
+						}
+					}
+					.form-btn {
+						.btn {
+							width: rem(100);
+							border-radius: rem(4);
+							height: rem(32);
+							font-size: rem(13);
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 330px) {
+			.box {
+				.box-tab {
+					.withdraw-money__bank {
+						.item {
+							width: rem(86);
+							height: rem(86);
+							margin: 0;
+							img {
+								padding-top: 0;
+								padding-bottom: 0;
+							}
 						}
 					}
 				}
@@ -1254,6 +1306,9 @@ $cl-btn: #36a7d6;
 									}
 									.success {
 										color: $cl-success;
+									}
+									.danger {
+										color: $cl-danger;
 									}
 								}
 								&:last-child {
@@ -1674,6 +1729,12 @@ $cl-btn: #36a7d6;
 							color: $cl-1;
 							font-weight: 600;
 							font-size: rem(18);
+						}
+					}
+					@media (max-width: 1420px) {
+						.child  {
+							width: rem(460);
+							height: rem(380);
 						}
 					}
 					@media (max-width: 1200px) {
@@ -2207,6 +2268,10 @@ $cl-btn: #36a7d6;
 .modal-general {
 	.modal-dialog {
 		max-width: fit-content;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
 		// background: #fff;
 		.modal-content {
 			padding: rem(32) 0;
@@ -2310,6 +2375,12 @@ $cl-btn: #36a7d6;
 }
 
 .modal-confirm {
+	.modal-dialog {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
 	.modal-content {
 		padding: 40px 20px;
 		.modal-body {
@@ -2397,4 +2468,223 @@ $cl-btn: #36a7d6;
 			}
 		}
 	}
+}
+
+#vntopHistory {
+	.modal-dialog {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		max-width: inherit;
+		width: rem(1000);
+		@media (max-width: 993px) {
+			width: calc(100% - 32px);
+		}
+		@media (max-width: 767px) {
+			height: initial;
+		}
+	}
+	.modal-content {
+		padding: 20px 0;
+		.modal-header {
+			border-bottom: 3px solid $cl-1;
+			padding-bottom: 20px;
+			h5 {
+				font-size: rem(25);
+				line-height: 25px;
+				color: $cl-blue;
+				font-weight: 700;
+				text-align: center;
+				text-transform: uppercase;
+				width: 100%;
+			}
+		}
+		.modal-body {
+			padding: rem(20) rem(100);
+			.bx1 {
+				display: flex;
+				justify-content: space-between;
+				.bx1-child {
+					display: flex;
+					flex-direction: column;
+					.bx1-group {
+						display: flex;
+						p {
+							font-size: 16px;
+							line-height: 40px;
+							color: $cl-text;
+							font-weight: 400;
+							&:first-child {
+								width: 192px;
+							}
+							&:last-child {
+								width: calc(100% - 192px);
+								color: $cl-blue;
+							}
+							.danger {
+								color: $cl-danger;
+							}
+							.success {
+								color: $cl-success;
+							}
+						}
+					}
+				}
+				@media (max-width: 767px) {
+					flex-direction: column;
+					.bx1-child {
+						.bx1-group {
+							p {
+								&:last-child {
+									text-align: right;
+								}
+							}
+						}
+					}
+				}
+			}
+			@media (max-width: 767px) {
+				padding: rem(16);
+			}
+		}
+	}
+}
+
+.modal-general2 {
+	.modal-dialog {
+	  max-width: 560px;
+	}
+  
+	.modal-content {
+	  border-radius: 20px;
+  
+	  .modal-header {
+		position: relative;
+		border-bottom: 2px solid $c2;
+		padding-top: 23px;
+		padding-bottom: 25px;
+  
+		.modal-title {
+		  text-transform: uppercase;
+		  text-align: center;
+		  font-size: rem(25);
+		  font-weight: bold;
+		  width: 100%;
+		  color: $c3;
+		}
+  
+		.close {
+		  position: absolute;
+		  width: rem(50);
+		  height: rem(50);
+		  border-radius: 50%;
+		  @include flexbox(center, center);
+		  color: #fff;
+		  font-size: rem(28);
+		  z-index: 1;
+		  background-color: $c4;
+		  padding: 0;
+		  right: 0;
+		  top: 0;
+		  opacity: 1;
+		}
+	  }
+  
+	  .modal-body {
+		padding: rem(28);
+  
+		label {
+		  font-weight: 500;
+		  color: $c1;
+		  margin-bottom: rem(10);
+		}
+  
+		.form-control {
+		  font-weight: bold;
+		  color: $c1;
+		  background-color: #daf1f9;
+		  border-radius: 5px;
+		  height: rem(45);
+		  border: 0;
+		}
+  
+		.btn-sb {
+		  margin-bottom: rem(11);
+		  margin-top: rem(18);
+		  height: rem(45);
+		  padding: 11px 23px;
+		  border-radius: 25px;
+		  background-color: $c2;
+		  color: #fff;
+		  transition: .2s;
+		  font-weight: bold;
+		  box-shadow: 11px 0 22px rgba($c2, .35);
+  
+		  &:hover {
+			background-color: $c3;
+		  }
+		}
+	  }
+	}
+}
+#open-account-risk {
+	overflow: scroll;
+}
+#open-investment .modal-content .modal-header {
+	padding: 0;
+	border: none;
+}
+.investment-popup {
+	text-align: center;
+	img {
+		width: 150px;
+	}
+	h4 {
+		font-weight: bold;
+		font-size: 28px;
+		color: $cl-blue;
+		padding: 24px 0 16px;
+	}
+	p {
+		color: #626262;
+	}
+	.investment-popup-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 24px;
+		a {
+			padding: 11px 23px;
+			display: inline-block;
+			border-radius: 20px;
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			margin: 0 8px;
+			&:first-child  {
+				background: $cl-blue;
+			}
+			&:last-child  {
+				background: $cl-1;
+			}
+			&:hover {
+				box-shadow: 11px 0 21px rgb(55 173 218 / 35%);
+			}
+		}
+	}
+	@media (max-width: 500px) {
+	     img {
+			width: 100px;
+		}
+		h4{
+			font-size: 20px;
+		}
+		.investment-popup-btn {
+			a {
+				border-radius: 12px;
+				font-size: 11px;
+			}
+		}
+    }
 }

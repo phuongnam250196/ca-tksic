@@ -231,4 +231,7 @@ $(document).ready(function() {
 
         return x1 + x2;
     }
+
+    let header_h = $("#header").outerHeight();
+    $(".body").css({"margin-top": header_h});
 });
