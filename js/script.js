@@ -154,6 +154,7 @@ $(document).ready(function() {
     function checkDropdown(cl) {
         let val1 = $(`.${cl}-menu`).find(".active").data('val');
         $(`.${cl}`).text(val1);
+        console.log(cl)
         $(`.${cl}`).on("click", function() {
             $(`.${cl}-menu .dropdown-item`).on("click", function() {
                 let txt = $(this).data('val')
@@ -234,4 +235,15 @@ $(document).ready(function() {
 
     let header_h = $("#header").outerHeight();
     $(".body").css({"margin-top": header_h});
+    let footer_h = $(".footer").outerHeight();
+    $(".body").css({"margin-bottom": footer_h});
+
+    $(".btn-search-mb").on("click", function()  {
+        let wContainer = $(".container").outerWidth();
+        $(".form-search-mobile").show();
+        $(".form-search-mobile input").val("").css({"width":wContainer}).focus();
+    });
+    $('.form-search-mobile input').blur(function() {
+        $(this).parents(".form-search-mobile").hide();
+    });
 });

@@ -31,13 +31,23 @@
                             </div>
                         </div>
                         <div class="input-group-mobile">
-                            <i class="far fa-search"></i>
+                            <i class="far fa-search btn-search-mb"></i>
+                            <div class="form-search-mobile">
+                                <form action="#" class="">
+                                    <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1">
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="language">
                         <img src="./images/en.png" height="29" width="29" alt="">
                         <div class="info">
-                            <span>EN</span>
+                            <!-- <span>EN</span> -->
+                            <button type="button" class="dropdown-toggle lang" data-type="normal" data-toggle="dropdown">EN</button>
+                            <div class="dropdown-menu lang-menu">
+                                <a class="dropdown-item active" data-val="EN" href="javascript:void(0)">EN</a>
+                                <a class="dropdown-item" data-val="VI" href="javascript:void(0)">VI</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,6 +385,10 @@
                     </div>
                 </aside>
             </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
             <div class="bottom">
                 <a href="" class="logout">
                     <i class="fal fa-power-off"></i>
@@ -383,7 +397,7 @@
                 <p class="text-nowrap">© 2021 TKSIC All right reserved</p>
             </div>
         </div>
-    </main>
+    </footer>
     <div id="menu">
         <nav class="main-menu">
             <div class="top">

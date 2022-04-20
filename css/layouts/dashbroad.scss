@@ -13,7 +13,7 @@ $db1: #f5f8fa;
   .ct {
     display: flex;
     justify-content: space-between;
-    padding-top: rem(40);
+    padding: rem(40) 0;
     .main {
       width: 100%;
       &.main-l {
@@ -439,24 +439,5 @@ $db1: #f5f8fa;
       }
     }
   }
-  .bottom {
-    display: flex;
-    justify-content: space-between;
-    font-size: rem(18);
-    color: $cl-text;
-    font-weight: 600;
-    padding: rem(30) 0 rem(30) 0;
-    a {
-      i {
-        margin-right: rem(8);
-      }
-    }
-    @media (max-width: 993px) {
-      font-size: rem(16);
-    }
-    @media (max-width: 400px) {
-      padding: 0 0 rem(16) 0;
-      font-size: rem(14);
-    }
-  }
+  
 }
