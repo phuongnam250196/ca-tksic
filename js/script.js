@@ -88,12 +88,12 @@ $(document).ready(function() {
     });
 
     $(".toggle-n").on("click", function() {
-        $(".main-menu").css({'transform': 'none'});
+        $(".main-menu").css({'transform': 'none', "box-shadow": "5px 0 12px #ddd"});
         $(".manche").show();
     });
 
     $(".manche").on("click", function() {
-        $(".main-menu").css({'transform': 'translateX(-100%)'});
+        $(".main-menu").css({'transform': 'translateX(-100%)', "box-shadow": "unset"});
         $(".manche").hide();
     })
 

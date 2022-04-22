@@ -158,6 +158,11 @@
                 }
               }
             }
+            @media (max-width: 400px) {
+              .language {
+                display: none;
+              }
+            }
         }
 
         .nav-right {
@@ -272,7 +277,6 @@
       top: 0;
       left: 0;
       background: #fff;
-      box-shadow: 11px 0 22px rgba($c2, .35);
       height: 100%;
       width: rem(350);
       z-index: 999;
