@@ -4555,6 +4555,9 @@ a:hover {
   .title-head .list .item:last-child {
     margin-bottom: 0;
   }
+  .title-head .list .item p {
+    font-size: 0.875rem;
+  }
 }
 
 .around {
