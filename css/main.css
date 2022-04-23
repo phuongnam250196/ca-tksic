@@ -4534,18 +4534,24 @@ a:hover {
     padding: 0;
   }
   .title-head h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
-  .title-head .list .item {
-    height: 2.5rem;
-    display: block;
-    text-align: center;
+  .title-head .list .item:first-child {
+    width: 35%;
+  }
+  .title-head .list .item:nth-child(2) {
+    width: 27%;
+  }
+  .title-head .list .item:last-child {
+    width: 35%;
   }
   .title-head .list .item img {
-    margin-bottom: 0.5rem;
+    margin-right: 0rem;
+    height: 0.875rem;
   }
   .title-head .list .item p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
+    letter-spacing: -1px;
   }
   .title-head .list .item p span {
     display: none;
