@@ -246,4 +246,18 @@ $(document).ready(function() {
     $('.form-search-mobile input').blur(function() {
         $(this).parents(".form-search-mobile").hide();
     });
+
+    $(".title-head .item.active").find("img").attr('src', $(".title-head .item.active").find("img").attr('src').replace(".png", "-blue.png"));
+    
+    $(".title-head .item").on('mouseenter', function(){
+        let url_img = $(this).find('img').attr('src');
+        if (url_img.indexOf("blue") === -1) {
+            $(this).find("img").attr({"src": url_img.replace(".png", "-blue.png")});
+        }
+    }).on('mouseleave', function(){ 
+        let url_img = $(this).find('img').attr('src');
+        if ($(this).attr('class').indexOf("active") === -1) {
+            $(this).find("img").attr({"src": url_img.replace("-blue.png", ".png")});
+        }
+    });
 });

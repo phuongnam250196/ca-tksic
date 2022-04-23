@@ -175,7 +175,25 @@ $cl-btn: #36a7d6;
 				}
 				p {
 					padding-left: rem(4);
-					font-size: rem(10);
+					font-size: rem(12);
+				}
+			}
+		}
+	}
+	@media (max-width: 520px) {
+		padding: 0;
+		h2 {
+			font-size: rem(28);
+		}
+		.list {
+			flex-direction: column;
+			.item {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				margin-bottom: rem(12);
+				&:last-child {
+					margin-bottom: 0;
 				}
 			}
 		}
