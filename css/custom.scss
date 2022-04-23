@@ -186,17 +186,21 @@ $cl-btn: #36a7d6;
 			font-size: rem(28);
 		}
 		.list {
-			flex-direction: column;
+			// flex-direction: column;
 			.item {
-				width: 100%;
-				display: flex;
-				justify-content: center;
-				margin-bottom: rem(12);
-				&:last-child {
-					margin-bottom: 0;
+				// display: flex;
+				// flex-direction: column;
+				// justify-content: start;
+				height: rem(40);
+				// align-items: flex-start;
+				display: block;
+				text-align: center;
+
+				img {
+					margin-bottom: rem(8);
 				}
 				p {
-					font-size: rem(15);
+					font-size: rem(12);
 				}
 			}
 		}
