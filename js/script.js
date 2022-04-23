@@ -154,7 +154,6 @@ $(document).ready(function() {
     function checkDropdown(cl) {
         let val1 = $(`.${cl}-menu`).find(".active").data('val');
         $(`.${cl}`).text(val1);
-        console.log(cl)
         $(`.${cl}`).on("click", function() {
             $(`.${cl}-menu .dropdown-item`).on("click", function() {
                 let txt = $(this).data('val')
