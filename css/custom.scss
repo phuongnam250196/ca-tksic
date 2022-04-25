@@ -2459,15 +2459,15 @@ $cl-btn: #36a7d6;
 					display: flex;
 					justify-content: center;
 					&>input {
-						width: 100%;
-						height: 60px;
+						width: rem(240);
+						height: rem(55);
 						display: inline-block;
 						margin: 0 12px;
 						border: none;
 						background: #fff;
 						text-align: center;
 						font-weight: bold;
-						font-size: 27px;
+						font-size: rem(24);
 						color: #37acda;
 						border-radius: 8px;
 						box-shadow: 0 1px 4px $cl-label;	
