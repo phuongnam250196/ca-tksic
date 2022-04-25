@@ -246,7 +246,9 @@ $(document).ready(function() {
         $(this).parents(".form-search-mobile").hide();
     });
 
-    $(".title-head .item.active").find("img").attr('src', $(".title-head .item.active").find("img").attr('src').replace(".png", "-blue.png"));
+    if ($(".title-head .item.active").find("img").attr('src')) {
+        $(".title-head .item.active").find("img").attr('src', $(".title-head .item.active").find("img").attr('src').replace(".png", "-blue.png"));
+    }
     
     $(".title-head .item").on('mouseenter', function(){
         let url_img = $(this).find('img').attr('src');
