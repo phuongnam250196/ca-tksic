@@ -4032,7 +4032,7 @@ a:hover {
   transition: 0.7s ease-in-out all;
 }
 .body-login #header-login {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9;
@@ -4048,7 +4048,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2.5rem;
+  padding: 1.25rem 0;
 }
 .body-login #header-login .hd-box .left {
   padding-left: 6.25rem;
@@ -4095,9 +4095,12 @@ a:hover {
     padding-left: 0rem;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 992px) {
   .body-login #header-login {
-    position: unset;
+    background: #fff;
+  }
+  .body-login #header-login .hd-box {
+    padding: 0.75rem 0;
   }
   .body-login #header-login .hd-box .left a:first-child img {
     width: 6.25rem;
@@ -4269,19 +4272,25 @@ a:hover {
   font-size: 1.5rem;
   color: #37acda;
   border-radius: 0.5rem;
-  -webkit-box-shadow: 0 1px 4px #bbb;
-          box-shadow: 0 1px 4px #bbb;
+  -webkit-box-shadow: 0 1px 4px #9bd5ec;
+          box-shadow: 0 1px 4px #9bd5ec;
 }
 .body-login .bl-right .box-login.box-otp form .form-group .withdraw-money__2-input > input:focus {
-  border: 1px solid #bbb;
+  border: 1px solid #9bd5ec;
+}
+@media (max-width: 500px) {
+  .body-login .bl-right .box-login.box-otp form .form-group .withdraw-money__2-input > input {
+    -webkit-box-shadow: 0 1px 4px #9bd5ec;
+            box-shadow: 0 1px 4px #9bd5ec;
+  }
 }
 .body-login .bl-right .box-login.box-otp form .form-group .box-reg {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 .body-login .bl-right .box-login.box-otp form .form-group .box-reg a {
   color: #005aaa;
   font-weight: bold;
+  font-size: 0.9375rem;
 }
 .body-login .bl-right .box-login.box-otp form .form-btn.form-btn-group .btn:last-child {
   background: #37acda;
@@ -4307,6 +4316,11 @@ a:hover {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (max-width: 1600px) {
+  .body-login .bl-right.r-register .box-login {
+    padding: 5rem 0;
+  }
+}
 @media (max-width: 1200px) {
   .body-login {
     -webkit-box-orient: vertical;
@@ -4329,6 +4343,32 @@ a:hover {
             transform: translate(-50%, -50%);
   }
 }
+@media (max-width: 992px) {
+  .body-login .bl-left.l-register {
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .body-login .bl-right.r-register {
+    width: 70%;
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    margin: 0 auto;
+  }
+  .body-login .bl-right.r-register .box-login {
+    width: 100%;
+    padding: 7.5rem 0;
+  }
+  .body-login .bl-right.r-register .box-login .box-title {
+    text-align: center;
+  }
+}
 @media (max-width: 769px) {
   .body-login .bl-left {
     width: 100%;
@@ -4349,7 +4389,7 @@ a:hover {
   }
   .body-login .bl-right .box-login {
     width: 100%;
-    padding: 2.5rem 0;
+    padding: 7.5rem 0;
   }
   .body-login .bl-right .box-login .box-title {
     text-align: center;
@@ -4366,11 +4406,36 @@ a:hover {
     margin-bottom: 1.25rem;
     text-align: center;
   }
+  .body-login .bl-right .box-login .box-title .title {
+    font-size: 1.5rem;
+  }
+  .body-login .bl-right .box-login .box-title .desc {
+    font-size: 0.875rem;
+  }
+  .body-login .bl-right .box-login .box-desc p {
+    font-size: 0.875rem;
+  }
   .body-login .bl-right .box-login form .form-group {
     margin-bottom: 1rem;
   }
+  .body-login .bl-right .box-login form .form-check label {
+    font-size: 0.875rem;
+  }
+  .body-login .bl-right.r-register {
+    width: calc(100% - 32px);
+  }
+  .body-login .bl-right.r-register .box-login {
+    padding: 6.25rem 0;
+  }
 }
 
+.footer-login {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
 .footer-login .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4404,6 +4469,13 @@ a:hover {
 @media (max-width: 993px) {
   .footer-login .bottom {
     font-size: 1rem;
+    padding: 0.75rem 0 0.75rem 0;
+  }
+  .footer-login .bottom p {
+    text-align: center;
+  }
+  .footer-login .bottom p:first-child {
+    margin-bottom: 0rem;
   }
 }
 @media (max-width: 500px) {
