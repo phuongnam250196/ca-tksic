@@ -4471,6 +4471,14 @@ a:hover {
     font-size: 0.875rem;
   }
 }
+.footer-login.footer-register {
+  position: unset;
+}
+@media (max-width: 1200px) {
+  .footer-login.footer-register {
+    position: fixed;
+  }
+}
 
 .table-responsive {
   overflow: auto;

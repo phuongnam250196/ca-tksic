@@ -476,4 +476,11 @@
       font-size: rem(14);
     }
   }
+
+  &.footer-register {
+    position: unset;
+    @media (max-width: 1200px) {
+      position: fixed;
+    }
+  }
 }
