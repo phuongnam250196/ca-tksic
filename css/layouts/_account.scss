@@ -74,17 +74,11 @@
       }
     }
     @media (max-width: 1200px) {
-      .hd-box {
-        .left {
-          padding-left: rem(0);
-        }
-      }
-    }
-    @media (max-width: 992px) {
       background: #fff;
       .hd-box {
         padding: rem(12) 0;
         .left {
+          padding-left: rem(0);
           a {
             &:first-child {
               img {
@@ -117,6 +111,7 @@
         }
       }
     }
+   
     @media (max-width: 500px) {
       .hd-box {
         .left {
@@ -357,7 +352,7 @@
       transform: translate(-50%, -50%);
     }
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     .bl-left {
       &.l-register {
         width: 100%;
@@ -467,16 +462,6 @@
     @media (max-width: 1200px) {
       flex-direction: column;
       align-items: center;
-      p {
-        text-align: center;
-        &:first-child {
-          margin-bottom: rem(12);
-        }
-      }
-    }
-
-    @media (max-width: 993px) {
-      font-size: rem(16);
       padding: rem(12) 0 rem(12) 0;
       p {
         text-align: center;
