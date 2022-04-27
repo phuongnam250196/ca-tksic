@@ -11,6 +11,10 @@
     left: 0;
     z-index: 9;
     width: 100%;
+    &.header-register {
+      background-color: #fff;
+      border-bottom: 1px solid #e2e2e2;
+    }
     .hd-box {
       display: flex;
       justify-content: space-between;

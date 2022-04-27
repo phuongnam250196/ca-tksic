@@ -4038,6 +4038,10 @@ a:hover {
   z-index: 9;
   width: 100%;
 }
+.body-login #header-login.header-register {
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
 .body-login #header-login .hd-box {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -98,16 +98,28 @@ $(document).ready(function() {
     })
 
 
-    let hei = $("#header").outerHeight();
+    let hei = $("#header-login").outerHeight();
     if ($(window).scrollTop() > hei) {
         $("#header").addClass('scroll');
+        $("#header-login").addClass('header-register')
+    } else {
+        $("#header-login").removeClass('header-register')
     }
+    let wCk = $(window).outerWidth();
+    console.log('widh', wCk)
     $(window).scroll(function() {
           let heiw = $(window).scrollTop();
           if (heiw > hei) {
             $("#header").addClass('scroll');
           } else {
             $("#header").removeClass('scroll');
+          }
+          if (wCk>1200 && wCk < 1600) {
+              if (heiw > hei) {
+                $("#header-login").addClass('header-register')
+              } else {
+                $("#header-login").removeClass('header-register')
+              }
           }
       });
 
