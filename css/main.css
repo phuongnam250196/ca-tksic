@@ -4644,6 +4644,9 @@ a:hover {
   color: #878787;
   font-weight: 500;
 }
+.title-head .list .item p span {
+  display: none;
+}
 .title-head .list .item:hover p {
   color: #005aaa;
 }
@@ -4700,9 +4703,6 @@ a:hover {
   .title-head .list .item p {
     font-size: 0.75rem;
     letter-spacing: -1px;
-  }
-  .title-head .list .item p span {
-    display: none;
   }
 }
 
