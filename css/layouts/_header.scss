@@ -25,6 +25,10 @@
 
             .logo {
                 margin: 0 rem(32);
+                img {
+                  object-fit: unset;
+                  height: auto;
+                }
             }
 
             .search {

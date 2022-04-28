@@ -2806,6 +2806,11 @@ a:hover {
 #header .nav .nav-left .logo {
   margin: 0 2rem;
 }
+#header .nav .nav-left .logo img {
+  -o-object-fit: unset;
+     object-fit: unset;
+  height: auto;
+}
 #header .nav .nav-left .search .input-group {
   position: relative;
 }
@@ -4626,6 +4631,9 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .title-head .list .item img {
   height: 1.5rem;
@@ -4661,7 +4669,7 @@ a:hover {
     font-size: 0.75rem;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   .title-head {
     padding: 0;
   }
