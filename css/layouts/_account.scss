@@ -67,7 +67,7 @@
             &:first-child {
               img {
                 width: rem(120);
-                height: rem(46);
+                height: auto;
               }
             }
             &:last-child {
@@ -90,7 +90,6 @@
             &:first-child {
               img {
                 width: rem(100);
-                height: rem(36);
               }
             }
             &:last-child {
@@ -126,7 +125,6 @@
             &:first-child {
               img {
                 width: rem(90);
-                height: rem(36);
                 margin-right: rem(8);
               }
             }

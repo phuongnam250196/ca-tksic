@@ -4092,7 +4092,7 @@ a:hover {
   }
   .body-login #header-login .hd-box .left a:first-child img {
     width: 7.5rem;
-    height: 2.875rem;
+    height: auto;
   }
   .body-login #header-login .hd-box .left a:last-child img {
     width: 3.375rem;
@@ -4111,7 +4111,6 @@ a:hover {
   }
   .body-login #header-login .hd-box .left a:first-child img {
     width: 6.25rem;
-    height: 2.25rem;
   }
   .body-login #header-login .hd-box .left a:last-child img {
     width: 3.125rem;
@@ -4132,7 +4131,6 @@ a:hover {
 @media (max-width: 500px) {
   .body-login #header-login .hd-box .left a:first-child img {
     width: 5.625rem;
-    height: 2.25rem;
     margin-right: 0.5rem;
   }
   .body-login #header-login .hd-box .left a:last-child img {
