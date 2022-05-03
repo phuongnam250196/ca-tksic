@@ -4303,7 +4303,7 @@ a:hover {
   background: #37acda;
 }
 .body-login .bl-right .box-login.box-register {
-  padding-bottom: 2.5rem;
+  margin-bottom: 6.25rem;
 }
 .body-login .bl-right .box-login.box-register .box-title {
   margin-bottom: 1.5rem;
@@ -4324,8 +4324,12 @@ a:hover {
           align-items: flex-end;
 }
 @media (max-width: 1600px) {
-  .body-login .bl-right.r-register .box-login {
-    padding: 5rem 0;
+  .body-login .bl-right.r-register .box-register {
+    padding: 1.25rem 0;
+    height: 37.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -4371,6 +4375,8 @@ a:hover {
   .body-login .bl-right.r-register .box-login {
     width: 100%;
     padding: 7.5rem 0;
+    height: unset;
+    overflow: unset;
   }
   .body-login .bl-right.r-register .box-login .box-title {
     text-align: center;
@@ -4478,14 +4484,6 @@ a:hover {
   .footer-login .bottom {
     padding: 1.25rem 0;
     font-size: 0.875rem;
-  }
-}
-.footer-login.footer-register {
-  position: unset;
-}
-@media (max-width: 1200px) {
-  .footer-login.footer-register {
-    position: fixed;
   }
 }
 

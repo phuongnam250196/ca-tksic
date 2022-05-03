@@ -309,7 +309,8 @@
         }
       }
       &.box-register {
-        padding-bottom: rem(40);
+        margin-bottom: rem(100);
+        
         .box-title {
           margin-bottom: rem(24);
         }
@@ -335,8 +336,12 @@
     &.r-register {
       align-items: flex-end;
       @media (max-width: 1600px) {
-        .box-login {
-          padding: rem(80) 0;
+        .box-register {
+          padding: rem(20) 0;
+          height: rem(600);
+          overflow-y: scroll;
+          overflow-x: hidden;
+          margin-bottom: 0;
         }
       }
     }
@@ -380,6 +385,8 @@
         .box-login {
           width: 100%;
           padding: rem(120) 0;
+          height: unset;
+          overflow: unset;
           .box-title {
             text-align: center;
           }
@@ -484,10 +491,10 @@
     }
   }
 
-  &.footer-register {
-    position: unset;
-    @media (max-width: 1200px) {
-      position: fixed;
-    }
-  }
+  // &.footer-register {
+  //   position: unset;
+  //   @media (max-width: 1200px) {
+  //     position: fixed;
+  //   }
+  // }
 }

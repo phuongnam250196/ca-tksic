@@ -106,8 +106,8 @@ $(document).ready(function() {
         $("#header-login").removeClass('header-register')
     }
     let wCk = $(window).outerWidth();
-    console.log('widh', wCk)
     $(window).scroll(function() {
+        console.log('widh', wCk, $(window).scrollTop(), hei)
           let heiw = $(window).scrollTop();
           if (heiw > hei) {
             $("#header").addClass('scroll');
